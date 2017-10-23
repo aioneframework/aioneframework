@@ -1,0 +1,36 @@
+{
+  "name": "adminpie",
+  "homepage": "https://github.com/oxosolutions/adminpie",
+  "authors": [
+    "SGS Sandhu <sgs.sandhu@gmail.com>"
+  ],
+  "description": "AdminPie Dashboard",
+  "main": "main.js",
+  "keywords": [
+    "dashboard",
+    "adminpie"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta",
+    "materialize-clockpicker": "^0.1.1",
+    "sweetalert": "^1.1.3",
+    "materialize": "^0.100.1",
+    "font-awesome": "^4.7.0",
+    "jquery-form-validator": "^2.3.74",
+    "uikit": "^2.27.4",
+    "gridster": "^0.5.6",
+    "select2": "^4.0.3",
+    "spectrum": "^1.8.0",
+    "owl.carousel": "^2.2.1",
+    "ace-builds": "^1.2.9"
+  }
+}
