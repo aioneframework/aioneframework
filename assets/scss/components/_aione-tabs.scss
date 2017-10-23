@@ -1,0 +1,123 @@
+/***************************************
+Aione Tabs
+***************************************/
+.aione-tabs-wrapper .aione-nav{
+	background-color: #ffffff;
+    box-shadow: none;
+}
+.aione-tabs-content-wrapper{
+	display:block;
+}
+.aione-tab-content{
+	display:none;
+}
+.aione-tab-content.active{
+	display:block;
+}
+.aione-tabs:after{
+	content:"";
+	display:block;
+	width:100%;
+	height:1px;
+	clear:both;
+}
+
+.aione-tabs {
+	
+}
+.aione-tabs > .aione-tab{
+	border-bottom: 1px solid #E8E8E8;
+}
+.aione-tabs > .aione-tab:first-child {
+    border-top: none;
+}
+.aione-tabs > .aione-tab.active{
+	border: 1px solid #E8E8E8;
+	border-bottom: none;
+	background-color:#FFFFFF;
+}
+.aione-tabs > .aione-tab.active:hover{
+	background-color: #F2F2F2;
+}
+.aione-tabs > .aione-tab > a{
+	color:#666666;
+	padding:0 10px;
+}
+.aione-tabs > .aione-tab > a:hover{
+	color:#666666;
+}
+.aione-tabs > .aione-tab.active > a {
+    color: #454545;
+}
+/***************************************
+Aione Nav Tabs
+***************************************/
+.aione-nav-tabs{
+	padding:0;
+	margin:0 0 20px 0;
+	background-color:#FFFFFF;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab{
+	border-bottom: 1px solid #E8E8E8;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab:first-child {
+    border-top: none;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab.nav-item-current{
+	border: 1px solid #E8E8E8;
+	border-bottom: none;
+	background-color:#FFFFFF;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab.nav-item-current:hover{
+	background-color: #F2F2F2;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab > a{
+	color:#666666;
+	padding:0 10px;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab > a:hover{
+	color:#666666;
+}
+.aione-nav-tabs .aione-tabs > .aione-tab.nav-item-current > a {
+    color: #454545;
+    font-weight: 600;
+}
+/***************************************
+Aione Account Tabs
+***************************************/
+.aione-account-tabs{
+	padding:0;
+	margin:0 0 20px 0;
+	background-color:#FFFFFF;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.aione-account-tabs .aione-tabs > .aione-tab{
+	border-bottom: 1px solid #E8E8E8;
+}
+.aione-account-tabs .aione-tabs > .aione-tab:first-child {
+    border-top: none;
+}
+.aione-account-tabs .aione-tabs > .aione-tab.nav-item-current{
+	border: 1px solid #E8E8E8;
+	border-bottom: none;
+	background-color:#FFFFFF;
+}
+.aione-account-tabs .aione-tabs > .aione-tab.nav-item-current:hover{
+	background-color: #F2F2F2;
+}
+.aione-account-tabs .aione-tabs > .aione-tab > a{
+	color:#666666;
+	padding:0 10px;
+}
+.aione-account-tabs .aione-tabs > .aione-tab > a:hover{
+	color:#666666;
+}
+.aione-account-tabs .aione-tabs > .aione-tab.nav-item-current > a {
+    color: #454545;
+    font-weight: 600;
+}

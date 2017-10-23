@@ -1,0 +1,32 @@
+/***************************************
+PAGE
+***************************************/
+
+.aione-content{
+width: calc(100% - 210px);
+float:right;
+position:relative;
+}
+.aione-main.sidebar-small .aione-content{
+	width: calc(100% - 50px);
+}
+.aione-page-content {
+    margin: 10px 10px 20px 0 ;
+    min-height: 400px;
+}
+
+.aione-wrapper.no-sidebar .aione-main .aione-content{
+	width: 100%;
+	float:none; 
+}
+
+/***************************************
+page-content
+***************************************/
+.page-content{
+	padding-top: 46px;
+	padding-right: 0px;
+	padding-left: 230px !important;
+}
+
+

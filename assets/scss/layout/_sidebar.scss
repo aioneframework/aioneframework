@@ -1,0 +1,33 @@
+/***************************************
+SIDEBAR
+***************************************/
+
+.aione-sidebar{
+	width: 200px;
+    float: left;
+    position: relative;
+}
+
+.aione-sidebar:before {
+    content: "";
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    background-color: #20252f;
+}
+
+.aione-main.sidebar-small .aione-sidebar{
+	width: 40px;
+}
+.aione-main.sidebar-small .aione-sidebar:before {
+    width: 40px;
+}
+
+.aione-sidebar.fixed-sidebar{
+	position:fixed;
+	bottom:0;
+}
+.aione-wrapper.no-sidebar .aione-main{
+	padding-top: 0px;
+}

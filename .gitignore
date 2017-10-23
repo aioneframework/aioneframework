@@ -1,0 +1,7 @@
+/node_modules
+/bower_components
+.htaccess
+/bak
+
+# Gulp build
+/aione-tools

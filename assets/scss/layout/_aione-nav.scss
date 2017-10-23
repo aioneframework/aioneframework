@@ -1,0 +1,237 @@
+
+/***************************************
+NAVIGATION
+***************************************/
+.aione-nav{
+	color: #454545;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    .aione-nav-background{
+        display:none;
+    }
+
+    ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+
+        li{
+            color: #454545;
+            display: inline;
+            padding: 0;
+            margin: 0;
+            position:relative;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            webkit-transition: all 150ms ease-out;
+            -moz-transition: all 150ms ease-out;
+            -o-transition: all 150ms ease-out;
+            transition: all 150ms ease-out;
+
+            a{
+                color: #454545;
+                display: block;
+                padding: 0 6px;
+                margin: 0;
+                font-size: 15px;
+                line-height: 40px; 
+                font-weight: 400;
+                font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                webkit-transition: all 150ms ease-out;
+                -moz-transition: all 150ms ease-out;
+                -o-transition: all 150ms ease-out;
+                transition: all 150ms ease-out;
+            }
+        }
+    }
+    > ul{
+
+        > li{
+            > a{
+
+                .nav-item-icon{
+                    width: 20px;
+                    height: 20px;
+                    padding: 0;
+                    margin: 5px;
+                    line-height: 20px;
+                    text-align: center;
+                    display: inline-block;
+
+                    i{
+                        height: auto;
+                        max-height:20px;
+                    }
+                }
+                .nav-item-text{
+    
+                }
+                .nav-item-arrow{
+                    position: absolute;
+                    padding: 0;
+                    margin: 0;
+                    right: 5px;
+                    top: 16px;
+                    width: 8px;
+                    height: 8px;
+                    text-align: center;
+                    border-top: 1px solid #676b75;
+                    border-right: 1px solid #676b75;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    -webkit-transition: all 150ms ease-out;
+                    -moz-transition: all 150ms ease-out;
+                    -o-transition: all 150ms ease-out;
+                    transition: all 150ms ease-out;
+                }
+            }
+            &.nav-item-current{
+                border-bottom: none;
+
+                > a{
+                    color: #121212;
+                }
+            }
+
+            &.nav-item-selected{
+
+            }
+        }
+    }
+}
+
+
+.aione-nav > ul > li.nav-item-current > a .nav-item-arrow,
+.aione-nav > ul > li.nav-item-selected > a .nav-item-arrow{
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+
+}
+.aione-nav > ul > li.nav-item-current > a .nav-item-arrow,
+.aione-nav > ul > li.nav-item-selected > a .nav-item-arrow{
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+}
+.aione-nav > ul > li > ul{
+	display:none;
+}
+.aione-nav > ul > li.nav-item-current > ul,
+.aione-nav > ul > li.nav-item-selected > ul{
+	display:block;
+}
+.aione-nav > ul > li > ul > li.nav-item-current{
+	background-color: #ffffff;
+}
+
+.aione-nav > ul > li > ul > li{
+
+}
+.aione-nav > ul > li > ul > li:last-child{
+	border-bottom:none;
+}
+
+.aione-nav > ul > li > ul > li > a{
+    padding:0 0 0 20px;
+}
+
+.aione-nav > ul > li > ul > li.nav-item-current > a:after{
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 0px;
+    bottom: -1px;
+    width: 2px;
+    background-color: #ffffff;
+}
+.aione-nav > ul > li > ul > li > a .nav-item-icon{
+	display:none;
+}
+
+/***************************************
+HORIZONTAL
+***************************************/
+
+/***************************************
+HORIZONTAL DARK
+***************************************/
+
+
+/***************************************
+HORIZONTAL LIGHT
+***************************************/
+
+/***************************************
+VERTICAL
+***************************************/
+.aione-nav.vertical ul li{
+    display:block;
+    float:none;
+}
+/***************************************
+VERTICAL DARK
+***************************************/
+.aione-nav.dark{
+    background-color: #23282d;
+}
+.aione-nav.dark ul li{
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.aione-nav.dark ul li a{
+    color: #ffffff;
+}
+.aione-nav.dark > ul > li:first-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.aione-nav.dark > ul > li.nav-item-current{
+    background-color: #0073aa;
+}
+.aione-nav.dark > ul > li.nav-item-current > a {
+    color: #fff;
+}
+.aione-nav.dark > ul > li.nav-item-selected{
+    background-color: #0f1117;
+}
+.aione-nav.dark > ul > li > ul{
+    background-color: #32373c;
+}
+.aione-nav.dark > ul > li > ul > li > a{
+    color: #ffffff;
+}
+.aione-nav.dark > ul > li > ul > li.nav-item-current > a{
+    color: #0073aa;
+}
+/***************************************
+VERTICAL LIGHT
+***************************************/
+
+/***************************************
+SIDEBAR SMALL
+***************************************/	
+.aione-main.sidebar-small .aione-nav > ul > li > a .nav-item-text,
+.aione-main.sidebar-small .aione-nav > ul > li > a .nav-item-arrow{
+    display:none;
+}
+.aione-main.sidebar-small .aione-nav > ul > li.nav-item-current > ul,
+.aione-main.sidebar-small .aione-nav > ul > li.nav-item-selected > ul{
+    display:none;
+}
+.aione-main.sidebar-small .aione-nav > ul > li.nav-item-current:hover > ul,
+.aione-main.sidebar-small .aione-nav > ul > li.nav-item-selected:hover > ul{
+    display:block;
+}
+.aione-main.sidebar-small .aione-nav > ul > li:hover > ul {
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    z-index: 999;
+}
+	
+	
+	

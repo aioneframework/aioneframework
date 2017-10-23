@@ -1,0 +1,39 @@
+
+/***************************************
+TO BE CHANGED
+***************************************/
+	
+	
+	.closeDialog{
+		color: #fff;
+	}
+	
+	
+	/*************** UNKNOWN DROPDOWN *******************/
+	
+	#dropdown{
+        width: 156px !important;
+        top: 58px !important;
+        right: 12px !important;
+        opacity: 1;
+    }
+    .dropdown-list{
+        margin-top: -0px;
+        position: absolute;
+        background: #fff;
+        display: block;
+        width: 130px;
+        box-shadow: -1px 5px 13px #e8e8e8;
+        margin-left: -100px;
+        text-align: left;
+    }
+   /* .dropdown-list > li > a{
+       padding:20px;
+    }*/
+    .dropdown-list li:hover{
+        background-color: #e8e8e8;
+    }
+    .divider{
+        padding: 0px !important;
+    }
+	

@@ -1,0 +1,290 @@
+img{
+    max-width: 100%;
+}
+
+.aione-border{
+    border:1px solid #e8e8e8; 
+}
+.aione-border-top{
+    border-top:1px solid #e8e8e8; 
+}
+.aione-border-right{
+    border-right:1px solid #e8e8e8; 
+}
+.aione-border-bottom{
+    border-bottom:1px solid #e8e8e8; 
+}
+.aione-border-left{
+    border-left:1px solid #e8e8e8; 
+}
+
+$i: 1;
+@while $i <= 100 {
+  .border-width-#{$i} {
+    border-width: $i+px;
+  }
+  $i: $i + 1;
+}
+
+.aione-shadow{
+    -moz-box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+    box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+}
+
+.aione-shadow.shadow-small{
+    -moz-box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+    box-shadow:0px 0px 6px rgba(0,0,0,0.3); 
+}
+.aione-shadow.shadow-medium{
+    -moz-box-shadow:0px 0px 12px rgba(0,0,0,0.4); 
+    -webkit-box-shadow:0px 0px 12px rgba(0,0,0,0.4); 
+    box-shadow:0px 0px 12px rgba(0,0,0,0.4); 
+}
+.aione-shadow.shadow-large{
+    -moz-box-shadow:0px 0px 30px rgba(0,0,0,0.6); 
+    -webkit-box-shadow:0px 0px 30px rgba(0,0,0,0.6); 
+    box-shadow:0px 0px 30px rgba(0,0,0,0.6); 
+}
+.aione-card{
+    
+}
+
+
+
+.aione-accordion,
+.aione-collapsible{
+    
+}
+.aione-accordion .aione-item{
+    border: 1px solid #e8e8e8;
+    border-bottom:none;
+}
+.aione-collapsible .aione-item{
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+}
+.aione-item-header{
+    padding: 15px 15px 15px 45px;
+    color: #666666;
+    background-color: #fafafa;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.aione-accordion .aione-item .aione-item-header,
+.aione-collapsible .aione-item .aione-item-header {
+    display: block;
+    position:relative;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.aione-accordion .aione-item.active .aione-item-header,
+.aione-collapsible .aione-item.active .aione-item-header {
+    background-color: #f2f2f2;
+}
+.aione-accordion .aione-item .aione-item-header:before,
+.aione-collapsible .aione-item .aione-item-header:before{
+    content: "";
+    width: 15px;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -1px;
+    border-top: 1px solid #989898;
+}
+.aione-accordion .aione-item .aione-item-header:after,
+.aione-collapsible .aione-item .aione-item-header:after {
+    content: "";
+    width: 0;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    margin-top: -8px;
+    border-left: 1px solid #989898;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.aione-accordion .aione-item.active .aione-item-header:before,
+.aione-collapsible .aione-item.active .aione-item-header:before {
+}
+.aione-accordion .aione-item.active .aione-item-header:after,
+.aione-collapsible .aione-item.active .aione-item-header:after {
+    height:0;
+    margin-top: -1px;
+}
+.aione-item-content{
+    padding: 20px;
+}
+.aione-accordion .aione-item .aione-item-content,
+.aione-collapsible .aione-item .aione-item-content{
+    display: none;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.4;
+    border-top: 1px solid #e8e8e8;
+    font-family: "Open Sans",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.aione-accordion .aione-item.active .aione-item-content,
+.aione-collapsible .aione-item.active .aione-item-content{
+    display:block;
+}
+/***************************************
+COMMON
+***************************************/
+ 
+.aione-message{
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: normal;
+    font-family: "Open Sans", Arial,sans-serif;
+    text-align: center;
+    color: #454545;
+    background-color: #f2f2f2;
+    border: 1px solid #e8e8e8;
+}
+.aione-message.success{
+    color: #4caf50;
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
+.aione-message.warning{
+    color: #FF9800;
+    background-color: #fff4e5;
+    border-color: #FF9800;
+} 
+.aione-message.error{
+    color: #F44336;
+    background-color: #fef2f1;
+    border-color: #F44336;
+}
+
+.aione-messages{
+
+}
+.aione-messages li{
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px dotted #e8e8e8;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+.aione-message.success .aione-messages li{
+    border-bottom: 1px dotted rgba(76, 175, 80, 0.2);
+}
+.aione-message.warning .aione-messages li{
+    border-bottom: 1px dotted rgba(255, 152, 0, 0.2);
+}
+.aione-message.error .aione-messages li{
+    border-bottom: 1px dotted rgba(244, 67, 54, 0.2);
+} 
+
+
+.aione-rounded{
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+.aione-circle{
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+
+.clear{
+	clear:both;
+}
+ 
+.display_block{
+	display: block !important;
+}
+
+.display-block{
+    display: block;
+}
+.display-inline{
+    display: inline;
+}
+.display-inline-block{
+    display: inline-block;
+}
+.display-none{
+    display: none;
+}
+.bold{
+    font-weight:bold;
+}
+.aione-align-left{
+    text-align: left;
+}
+.aione-align-center{
+    text-align: center;
+}
+.aione-align-right{
+    text-align: right;
+}
+
+.aione-float-left{
+    float: left;
+}
+.aione-float-right{
+    float: right;
+}
+
+.aione-tooltip{
+    position:relative;
+}
+.aione-tooltip:before{
+    content: attr(title);
+    height:1px;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    border-radius: 4px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4; 
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    -webkit-transform: translate(0,-100%);
+    -moz-transform: translate(0,-100%);
+    transform: translate(0,-100%); 
+
+}
+.aione-tooltip:hover:before{
+    opacity:1; 
+    height:auto; 
+}
+		
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+}
+::-webkit-scrollbar-thumb {
+    background: #454545; 
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #888888; 
+}

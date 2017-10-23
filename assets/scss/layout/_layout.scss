@@ -1,0 +1,26 @@
+/***************************************
+LAYOUT
+***************************************/
+.aione-wrapper{
+	margin: 0;
+    padding: 0;
+	
+}
+.aione-layout-wide{
+	width:100%;
+}
+.aione-row{
+	
+}
+.aione-row:after{
+	content:"";
+	display:block;
+	width:100%;
+	clear:both;
+}
+.aione-main{
+	padding-top: 40px;
+}
+.aione-wrapper.no-header .aione-main{
+	padding-top: 0px;
+}
