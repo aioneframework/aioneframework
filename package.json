@@ -1,0 +1,25 @@
+{
+  "name": "gulp_build",
+  "version": "1.0.0",
+  "description": "To create javascript compressed file",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css"  : "latest",
+    "gulp-concat"     : "latest",
+    "gulp-inject"     : "latest",
+    "gulp-order"      : "latest",
+    "gulp-rename"     : "latest",
+    "gulp-sass"       : "latest",
+    "gulp-uglify"     : "latest",
+    "gulp-useref"     : "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SGS Sandhu",
+  "license": "MIT"
+}

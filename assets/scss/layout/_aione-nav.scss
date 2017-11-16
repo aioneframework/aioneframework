@@ -7,6 +7,7 @@ NAVIGATION
     background-color: #ffffff;
     width: 100%;
     height: auto;
+    box-shadow: none;
     .aione-nav-background{
         display:none;
     }
@@ -209,7 +210,40 @@ VERTICAL DARK
 /***************************************
 VERTICAL LIGHT
 ***************************************/
-
+.aione-nav.vertical.light{
+    background-color: #ffffff;
+}
+.aione-nav.vertical.light ul li{
+    color: #454545;
+    border-bottom: 1px solid #e8e8e8;
+}
+.aione-nav.vertical.light ul li a{
+    color: #454545;
+}
+.aione-nav.vertical.light > ul > li:first-child{
+    border-top: 1px solid #e8e8e8;
+}
+.aione-nav.vertical.light > ul > li.nav-item-current{
+    background-color: #0073aa;
+}
+.aione-nav.vertical.light > ul > li.nav-item-current > a {
+    color: #ffffff;
+}
+.aione-nav.vertical.light > ul > li.nav-item-selected{
+    background-color: #f2f2f2;
+}
+.aione-nav.vertical.light > ul > li.nav-item-selected > a{
+    background: #0073aa;
+}
+.aione-nav.vertical.light > ul > li > ul{
+    background-color: #f8f8f8;
+}
+.aione-nav.vertical.light > ul > li > ul > li > a{
+    color: #454545;
+}
+.aione-nav.vertical.light > ul > li > ul > li.nav-item-current > a{
+    color: #0073aa;
+}
 /***************************************
 SIDEBAR SMALL
 ***************************************/	

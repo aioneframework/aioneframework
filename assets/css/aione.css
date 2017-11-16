@@ -441,7 +441,8 @@ table {
   color: #454545;
   background-color: #fff;
   width: 100%;
-  height: auto
+  height: auto;
+  box-shadow: none
 }
 .aione-nav .aione-nav-background {
   display: none
@@ -590,6 +591,51 @@ table {
   color: #fff
 }
 .aione-nav.dark > ul > li > ul > li.nav-item-current > a {
+  color: #0073aa
+}
+.aione-nav.vertical.light,
+.page-footer .aione-nav.vertical.footer-copyright {
+  background-color: #fff
+}
+.aione-nav.vertical.light ul li,
+.page-footer .aione-nav.vertical.footer-copyright ul li {
+  color: #454545;
+  border-bottom: 1px solid #e8e8e8
+}
+.aione-nav.vertical.light ul li a,
+.page-footer .aione-nav.vertical.footer-copyright ul li a {
+  color: #454545
+}
+.aione-nav.vertical.light > ul > li:first-child,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li:first-child {
+  border-top: 1px solid #e8e8e8
+}
+.aione-nav.vertical.light > ul > li.nav-item-current,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li.nav-item-current {
+  background-color: #0073aa
+}
+.aione-nav.vertical.light > ul > li.nav-item-current > a,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li.nav-item-current > a {
+  color: #fff
+}
+.aione-nav.vertical.light > ul > li.nav-item-selected,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li.nav-item-selected {
+  background-color: #f2f2f2
+}
+.aione-nav.vertical.light > ul > li.nav-item-selected > a,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li.nav-item-selected > a {
+  background: #0073aa
+}
+.aione-nav.vertical.light > ul > li > ul,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li > ul {
+  background-color: #f8f8f8
+}
+.aione-nav.vertical.light > ul > li > ul > li > a,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li > ul > li > a {
+  color: #454545
+}
+.aione-nav.vertical.light > ul > li > ul > li.nav-item-current > a,
+.page-footer .aione-nav.vertical.footer-copyright > ul > li > ul > li.nav-item-current > a {
   color: #0073aa
 }
 .aione-main.sidebar-small .aione-nav > ul > li > a .nav-item-arrow,
@@ -819,6 +865,25 @@ img {
 }
 .aione-border-left {
   border-left: 1px solid #e8e8e8
+}
+.aione-border-none {
+  border: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none
+}
+.aione-border-top-none {
+  border-top: none
+}
+.aione-border-right-none {
+  border-right: none
+}
+.aione-border-bottom-none {
+  border-bottom: none
+}
+.aione-border-left-none {
+  border-left: none
 }
 .border-width-1 {
   border-width: 1px
@@ -1298,6 +1363,9 @@ img {
   text-align: center
 }
 .aione-align-right {
+  text-align: right
+}
+.aione-align-justify {
   text-align: right
 }
 .aione-float-left {

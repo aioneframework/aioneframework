@@ -1,10 +1,10 @@
 {
-  "name": "adminpie",
-  "homepage": "https://github.com/oxosolutions/adminpie",
+  "name": "aioneframework",
+  "homepage": "https://github.com/aioneframework/aioneframework",
   "authors": [
     "SGS Sandhu <sgs.sandhu@gmail.com>"
   ],
-  "description": "AdminPie Dashboard",
+  "description": "The ALL-IN-ONE Web Design Framework",
   "main": "main.js",
   "keywords": [
     "dashboard",
@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "bootstrap": "v4.0.0-beta",
-    "materialize-clockpicker": "^0.1.1",
     "sweetalert": "^1.1.3",
     "materialize": "^0.100.1",
     "font-awesome": "^4.7.0",

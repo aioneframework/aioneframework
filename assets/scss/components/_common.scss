@@ -17,7 +17,25 @@ img{
 .aione-border-left{
     border-left:1px solid #e8e8e8; 
 }
-
+.aione-border-none{
+    border:none;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-left:none;
+}
+.aione-border-top-none{
+    border-top:none; 
+}
+.aione-border-right-none{
+    border-right:none;
+}
+.aione-border-bottom-none{
+    border-bottom:none;
+}
+.aione-border-left-none{
+    border-left:none;
+}
 $i: 1;
 @while $i <= 100 {
   .border-width-#{$i} {
@@ -233,6 +251,9 @@ COMMON
 .aione-align-right{
     text-align: right;
 }
+.aione-align-justify{
+    text-align: right;
+}
 
 .aione-float-left{
     float: left;
@@ -273,6 +294,12 @@ COMMON
     opacity:1; 
     height:auto; 
 }
+
+
+
+
+
+
 		
 ::-webkit-scrollbar {
     width: 8px;
