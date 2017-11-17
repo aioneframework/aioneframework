@@ -36,4 +36,225 @@ TO BE CHANGED
     .divider{
         padding: 0px !important;
     }
+
+
+
+
+
+
+    .aione-nav .aione-nav-toggle {
+  width: 20px;
+  position: relative;
+  clear:both;
+  display: none;
+}
+.aione-nav .aione-nav-toggle.active {
+  display: inline-block;
+}
+.aione-nav .aione-nav-toggle .nav-toggle {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px 0
+}
+.aione-nav .aione-nav-toggle .nav-toggle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 2px;
+  bottom: 2px;
+  display: block;
+  border-top: 2px solid #787878;
+  border-bottom: 2px solid #787878;
+}
+.aione-nav .aione-nav-toggle .nav-toggle:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  bottom: 0;
+  display: block;
+  margin: -1px 0 0 0;
+  border-top: 2px solid #787878;
+}
+.aione-nav .aione-nav-toggle:hover .nav-toggle:before,
+.aione-nav .aione-nav-toggle:hover .nav-toggle:after {
+    border-color: #666666;
+}
+
+.aione-nav.horizontal{
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: none;
+}
+.aione-nav.horizontal > ul > li:hover > a,
+.aione-nav.horizontal > ul > li > a:hover{
+    background-color: #f2f2f2;
+}
+.aione-nav.horizontal > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 330px;
+    background: #f2f2f2;
+    z-index: 9999;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+}
+.aione-nav.horizontal > ul > li:hover > ul {
+    display: block;
+}
+.aione-nav.horizontal > ul > li > ul > li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+.aione-nav.horizontal > ul > li > ul > li > a{
+    display: block;
+    width: 100%;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: left;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.aione-nav.horizontal > ul > li > ul > li > a:hover{
+    color:#FFFFFF;
+    background-color: #168dc5;
+    padding: 0 0 0 20px;
+}
+
+.field-type-code textarea{
+    width: 0;
+    height: 0;
+    display: inline;
+    overflow: hidden;
+    opacity: 1;
+    line-height: 0;
+    min-height: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.field-wrapper .aione-code-editor {
+    min-height:100px;
+}
+.field-wrapper.small .aione-code-editor {
+    height:140px;
+}
+.field-wrapper.medium .aione-code-editor {
+    height:280px;
+}
+.field-wrapper.large .aione-code-editor {
+    height:400px;
+}
+.field-wrapper.full .aione-code-editor {
+    height:auto;
+}
+.aione-code-editor-wrapper.fullscreen{
+    background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.field-wrapper .aione-code-editor-wrapper.fullscreen .aione-code-editor {
+    height:100%;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.field-wrapper .aione-code-editor-wrapper.fullscreen .aione-code-editor .ace_content{
+    height:100% !important;
+    min-height: 800px !important;
+}
+
+#aione_account_tabs > .aione-tabs > .aione-tab{
+    width: auto;
+    display: inline-block;
+}
+
+
+
+.aione-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+    background: rgba(255,255,255,0.3);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #666666;
+    opacity:1;
+    -moz-transition:all 100ms ease-in-out;
+    -webkit-transition:all 100ms ease-in-out;
+    transition:all 100ms ease-in-out;
+}
+.aione-theme .owl-dots .owl-dot:hover span{
+    background-color: #666666;
+}
+.aione-theme .owl-dots .owl-dot.active span{
+    background:#168dc5;
+    border-color:#168dc5;
+}
+.aione-theme .owl-nav{
+
+}
+.aione-theme .owl-nav .owl-prev,
+.aione-theme .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 60px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 60px;
+    padding: 0 25px;
+    color: rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.3);
+        -moz-transition:all 100ms ease-in-out;
+    -webkit-transition:all 100ms ease-in-out;
+    transition:all 100ms ease-in-out;
+}
+.aione-theme:hover .owl-nav .owl-prev,
+.aione-theme:hover .owl-nav .owl-next,
+.aione-theme .owl-nav .owl-prev:hover,
+.aione-theme .owl-nav .owl-next:hover{
+    color: rgba(255,255,255,1);
+    background: rgba(0,0,0,0.6);
+}
+.aione-theme .owl-nav .owl-prev{
+    left:0;
+}
+.aione-theme .owl-nav .owl-next{
+    right:0;
+}
+
+.owl-carousel-item-imgoverlay {
+    opacity: 1;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.owl-carousel .item:hover .owl-carousel-item-imgoverlay {
+    opacity: 1;
+    background-color: transparent;
+}
 	

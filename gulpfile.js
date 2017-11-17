@@ -18,22 +18,30 @@ let cleanCSS 	= require('gulp-clean-css');
 //var mainjs = './../assets/js/main.js';
 //var mainjsmin = './../assets/js/main.min.js';
 
+var scripts = [
+		'bower_components/jquery/dist/jquery.js',
+		'bower_components/typed.js/lib/typed.js',
+		'bower_components/spectrum/spectrum.js',
+		'bower_components/sweetalert/dist/sweetalert.min.js',
+		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js',
+		'assets/scripts/aione-core.js'
+		];
 
 
-gulp.task('makejs', function() {  
-    return gulp.src([
-			'../../bower_components/jquery/dist/jquery.js',
-			'../../bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
-			])
-		.pipe(order([
-			'../../bower_components/jquery/dist/jquery.js',
-			'../../bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
-		],{ base: './' }))
+gulp.task('testjs', function() {  
+    return gulp.src(scripts)
+		.pipe(order(scripts,{ base: './' }))
         .pipe(concat('aione.js'))
-        .pipe(gulp.dest('../../assets/js/'))
+        .pipe(gulp.dest('./assets/test/js/'));
+});
+gulp.task('makejs', function() {  
+    return gulp.src(scripts)
+		.pipe(order(scripts,{ base: './' }))
+        .pipe(concat('aione.js'))
+        .pipe(gulp.dest('./assets/js/'))
         .pipe(rename('aione.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('../../assets/js/'));
+        .pipe(gulp.dest('./assets/js/'));
 });
 
 gulp.task('makecss', function(){
@@ -46,7 +54,7 @@ gulp.task('makecss', function(){
 			.pipe(gulp.dest('./assets/css/'));
 });
 
-gulp.task('test-scss', function(){
+gulp.task('testcss', function(){
 		return gulp.src('./assets/scss/*.scss')
 			.pipe(sass()) // Using gulp-sass
 			.pipe(cleanCSS({format: 'beautify'}))
