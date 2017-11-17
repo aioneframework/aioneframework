@@ -22,6 +22,7 @@ var scripts = [
 		'bower_components/jquery/dist/jquery.js',
 		'bower_components/typed.js/lib/typed.js',
 		'bower_components/spectrum/spectrum.js',
+		'bower_components/owl.carousel/dist/owl.carousel.js',
 		'bower_components/sweetalert/dist/sweetalert.min.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js',
 		'assets/scripts/aione-core.js'
@@ -34,6 +35,7 @@ gulp.task('testjs', function() {
         .pipe(concat('aione.js'))
         .pipe(gulp.dest('./assets/test/js/'));
 });
+/*
 gulp.task('makejs', function() {  
     return gulp.src(scripts)
 		.pipe(order(scripts,{ base: './' }))
@@ -41,6 +43,13 @@ gulp.task('makejs', function() {
         .pipe(gulp.dest('./assets/js/'))
         .pipe(rename('aione.min.js'))
         .pipe(uglify())
+        .pipe(gulp.dest('./assets/js/'));
+});
+*/
+gulp.task('makejs', function() {  
+    return gulp.src(scripts)
+		.pipe(order(scripts,{ base: './' }))
+        .pipe(concat('aione.js'))
         .pipe(gulp.dest('./assets/js/'));
 });
 
