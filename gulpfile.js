@@ -24,6 +24,7 @@ var scripts = [
 		'bower_components/spectrum/spectrum.js',
 		'bower_components/owl.carousel/dist/owl.carousel.js',
 		'bower_components/sweetalert/dist/sweetalert.min.js',
+		'bower_components/select2/dist/js/select2.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js',
 		'assets/scripts/aione-core.js'
 		];

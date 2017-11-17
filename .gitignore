@@ -1,5 +1,7 @@
 /node_modules
 /bower_components
+/assets/test
+/assets/test2
 .htaccess
 /bak
 
