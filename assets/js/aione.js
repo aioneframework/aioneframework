@@ -18371,15 +18371,7 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$('.aione-main').toggleClass('sidebar-small');
 		var sidebar_status = ($(this).hasClass('active'))?1:0;
-		console.log();
-		$.ajax({
-			type:'POST',
-			url: '{{url('user-meta-update')}}',
-			data: {layout_sidebar_small:sidebar_status},
-			success: function(result){
-				console.log(result)
-			}
-		});
+		console.log(sidebar_status);
 	});
 	
 	/*****************************************************
