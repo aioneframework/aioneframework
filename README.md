@@ -15,9 +15,6 @@
 
 
 
-
-[![Sauce Labs Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
-
 ## What's included
 
 We are delivering css,js and source code. Dependancies are loaded via Bower  
