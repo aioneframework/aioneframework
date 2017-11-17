@@ -33,16 +33,24 @@ assets/
 │   ├── fontawesome-webfont.woff
 │   └── fontawesome-webfont.woff2
 ├── js/
+│   ├── vendor.js
+│   ├── vendor.min.js
 │   ├── aione.js
 │   └── aione.min.js
 ├── scripts/
 │   └── aione-core.js
-└── scss/
-    └── aione.scss
+├── scss/
+│    └── aione.scss
+└── vendor/
+    ├── jquery.js
+    ├── typed.js
+    ├── spectrum.js
+    ├── owl.carousel.js
+    ├── sweetalert.min.js
+    ├── select2.js
+    └── jquery.form-validator.js
     
 ```
-
-
 
 ## Documentation
 
