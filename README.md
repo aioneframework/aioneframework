@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://aioneframework.com/">
-    <img src="http://aioneframework.com/assets/images/aione-framework.png" alt="Aione Framework" width=200 height=100>
+    <img src="http://aioneframework.com/assets/images/aione-framework.png" alt="Aione Framework">
   </a>
 
   <h3 align="center">Aione Framework</h3>
