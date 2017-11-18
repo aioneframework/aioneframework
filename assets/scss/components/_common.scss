@@ -36,6 +36,43 @@ img{
 .aione-border-left-none{
     border-left:none;
 }
+.border-style-solid{
+    border-style:solid;
+}
+.border-style-dotted{
+    border-style:dotted;
+}
+.border-style-none{
+    border-style:none;
+}
+.border-style-hidden{
+    border-style:hidden;
+}
+.border-style-dashed{
+    border-style:dashed;
+}
+.border-style-double{
+    border-style:double;
+}
+.border-style-groove{
+    border-style:groove;
+}
+.border-style-ridge{
+    border-style:ridge;
+}
+.border-style-outset{
+    border-style:outset;
+}
+.border-style-inset{
+    border-style:inset;
+}
+.border-style-initial{
+    border-style:initial;
+}
+.border-style-inherit{
+    border-style:inherit;
+}
+
 $i: 1;
 @while $i <= 100 {
   .border-width-#{$i} {

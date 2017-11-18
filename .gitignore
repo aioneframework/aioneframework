@@ -10,3 +10,5 @@
 /tools
 /build
 /test
+
+npm-debug.log
