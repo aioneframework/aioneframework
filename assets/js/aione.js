@@ -4,9 +4,23 @@ $(document).ready(function() {
 	/*  Aione Slider
 	/*****************************************************/
 	try{
-		$(".owl-carousel").owlCarousel({
+		$(".aione-slider").owlCarousel({
 			
 		    items:1,
+		    loop:true,
+		    autoplay:true,
+		    autoplayTimeout:2000,
+		    autoplayHoverPause:true,
+		    nav:true,
+		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+		});
+	}catch(e){
+
+	}
+	try{
+		$(".aione-carousel").owlCarousel({
+			
+		    items:3,
 		    loop:true,
 		    autoplay:true,
 		    autoplayTimeout:2000,
@@ -252,10 +266,12 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Aione Form Selct 2
 	/*****************************************************/
+	/*
 	$('.non-repeater .field-type-multi_select select').select2({
 	  theme: "aione",
 	  width: '100%'
 	});
+	*/
 	$('.non-repeater .field-type-multi_select select option[value=""]').remove();
 
 	$('.aione-form-multiselect-all').click(function(e){

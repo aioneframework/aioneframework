@@ -24,7 +24,7 @@ var vendors = [
 		'bower_components/spectrum/spectrum.js',
 		'bower_components/owl.carousel/dist/owl.carousel.js',
 		'bower_components/sweetalert/dist/sweetalert-dev.js',
-		'bower_components/select2/dist/js/select2.js',
+		//'bower_components/select2/dist/js/select2.js',
 		'bower_components/list.js/dist/list.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
 		];
