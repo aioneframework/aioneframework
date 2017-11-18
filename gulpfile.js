@@ -23,8 +23,9 @@ var vendors = [
 		'bower_components/typed.js/lib/typed.js',
 		'bower_components/spectrum/spectrum.js',
 		'bower_components/owl.carousel/dist/owl.carousel.js',
-		'bower_components/sweetalert/dist/sweetalert.min.js',
+		'bower_components/sweetalert/dist/sweetalert-dev.js',
 		'bower_components/select2/dist/js/select2.js',
+		'bower_components/list.js/dist/list.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
 		];
 
@@ -33,33 +34,41 @@ var scripts = [
 		];
 
 
-gulp.task('testjs', function() {  
-    return gulp.src(scripts)
-		.pipe(order(scripts,{ base: './' }))
-        .pipe(concat('aione.js'))
+gulp.task('test-vendor-js', function() {  
+    return gulp.src(vendors)
+		.pipe(order(vendors,{ base: './' }))
+        .pipe(concat('vendor.js'))
+        .pipe(gulp.dest('./test/js/'))
+        .pipe(rename('vendor.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./assets/test/js/'));
 });
-/*
-gulp.task('makejs', function() {  
+gulp.task('test-scripts', function() {  
     return gulp.src(scripts)
 		.pipe(order(scripts,{ base: './' }))
         .pipe(concat('aione.js'))
-        .pipe(gulp.dest('./assets/js/'))
+        .pipe(gulp.dest('./test/js/'))
         .pipe(rename('aione.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./assets/js/'));
+        .pipe(gulp.dest('./assets/test/js/'));
 });
-*/
+
 gulp.task('make-vendor-js', function() {  
     return gulp.src(vendors)
 		.pipe(order(vendors,{ base: './' }))
         .pipe(concat('vendor.js'))
+        .pipe(gulp.dest('./assets/js/'))
+        .pipe(rename('vendor.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./assets/js/'));
 });
 gulp.task('make-scripts', function() {  
     return gulp.src(scripts)
 		.pipe(order(scripts,{ base: './' }))
         .pipe(concat('aione.js'))
+        .pipe(gulp.dest('./assets/js/'))
+        .pipe(rename('aione.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./assets/js/'));
 });
 
@@ -83,6 +92,8 @@ gulp.task('testcss', function(){
 gulp.task('automakecss', function () {
   gulp.watch('./../public/../scss/**/*.scss', ['makecss']);
 });
+
+gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
 gulp.task('makejs', ['make-scripts', 'make-vendor-js']);
 
