@@ -33,6 +33,7 @@
     "ace-builds": "^1.2.9",
     "typed.js": "^2.0.6",
     "list.js": "^1.5.0",
-    "autosize": "^4.0.0"
+    "autosize": "^4.0.0",
+    "Sortable": "sortablejs#^1.6.0"
   }
 }
