@@ -84,50 +84,7 @@ TO BE CHANGED
     border-color: #666666;
 }
 
-.aione-nav.horizontal{
-    border-bottom: 1px solid #e8e8e8;
-    box-shadow: none;
-}
-.aione-nav.horizontal > ul > li:hover > a,
-.aione-nav.horizontal > ul > li > a:hover{
-    background-color: #f2f2f2;
-}
-.aione-nav.horizontal > ul > li > ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 330px;
-    background: #f2f2f2;
-    z-index: 9999;
-    border: 1px solid #e8e8e8;
-    -webkit-box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
-    box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
-}
-.aione-nav.horizontal > ul > li:hover > ul {
-    display: block;
-}
-.aione-nav.horizontal > ul > li > ul > li{
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid #e8e8e8;
 
-}
-.aione-nav.horizontal > ul > li > ul > li > a{
-    display: block;
-    width: 100%;
-    padding: 0 0 0 15px;
-    font-size: 16px;
-    line-height: 36px;
-    text-align: left;
-    -webkit-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-}
-.aione-nav.horizontal > ul > li > ul > li > a:hover{
-    color:#FFFFFF;
-    background-color: #168dc5;
-    padding: 0 0 0 20px;
-}
 
 .field-type-code textarea{
     width: 0;

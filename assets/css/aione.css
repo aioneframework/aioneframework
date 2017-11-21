@@ -1088,6 +1088,48 @@ table {
 .aione-nav > ul > li > ul > li > a .nav-item-icon {
   display: none
 }
+.aione-nav.horizontal {
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: none
+}
+.aione-nav.horizontal > ul > li {
+  float: left
+}
+.aione-nav.horizontal > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 330px;
+  background: #f2f2f2;
+  z-index: 9999;
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 2px 3px 8px rgba(0,0,0,.15);
+  box-shadow: 2px 3px 8px rgba(0,0,0,.15)
+}
+.aione-nav.horizontal > ul > li:hover > ul {
+  display: block
+}
+.aione-nav.horizontal > ul > li > ul > li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8
+}
+.aione-nav.horizontal > ul > li > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: left;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+.aione-nav.horizontal > ul > li > ul > li > a:hover {
+  color: #fff;
+  background-color: #168dc5;
+  padding: 0 0 0 20px
+}
 .aione-nav.vertical ul li {
   display: block;
   float: none
@@ -38600,49 +38642,6 @@ input[type=file]:hover {
 .aione-nav .aione-nav-toggle:hover .nav-toggle:after,
 .aione-nav .aione-nav-toggle:hover .nav-toggle:before {
   border-color: #666
-}
-.aione-nav.horizontal {
-  border-bottom: 1px solid #e8e8e8;
-  box-shadow: none
-}
-.aione-nav.horizontal > ul > li > a:hover,
-.aione-nav.horizontal > ul > li:hover > a {
-  background-color: #f2f2f2
-}
-.aione-nav.horizontal > ul > li > ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 330px;
-  background: #f2f2f2;
-  z-index: 9999;
-  border: 1px solid #e8e8e8;
-  -webkit-box-shadow: 2px 3px 8px rgba(0,0,0,.15);
-  box-shadow: 2px 3px 8px rgba(0,0,0,.15)
-}
-.aione-nav.horizontal > ul > li:hover > ul {
-  display: block
-}
-.aione-nav.horizontal > ul > li > ul > li {
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid #e8e8e8
-}
-.aione-nav.horizontal > ul > li > ul > li > a {
-  display: block;
-  width: 100%;
-  padding: 0 0 0 15px;
-  font-size: 16px;
-  line-height: 36px;
-  text-align: left;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out
-}
-.aione-nav.horizontal > ul > li > ul > li > a:hover {
-  color: #fff;
-  background-color: #168dc5;
-  padding: 0 0 0 20px
 }
 .field-type-code textarea {
   width: 0;
