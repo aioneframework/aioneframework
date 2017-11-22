@@ -38704,7 +38704,6 @@ input[type=file]:hover {
   opacity: 1;
   visibility: visible;
   overflow: hidden;
-  background-color: #fff;
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
@@ -38748,11 +38747,9 @@ input[type=file]:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  color: #fff;
   font-size: 16px;
   line-height: 22px;
   overflow: hidden;
-  background-color: rgba(0,0,0,.6);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: all .35s ease-in-out;
@@ -38766,7 +38763,7 @@ input[type=file]:hover {
   font-family: inherit;
   font-style: normal
 }
-.title-m {
+.gallery-caption .aione-title {
   background-color: rgba(0,0,0,.28);
   box-shadow: 0 0 3px 1px rgba(255,255,255,.1);
   font-size: 15px;
@@ -38775,9 +38772,9 @@ input[type=file]:hover {
   text-transform: uppercase;
   word-break: break-all!important
 }
-.excerpt-m {
-  font-size: 12px;
-  line-height: 15px;
+.gallery-caption .description {
+  font-size: 16px;
+  line-height: 18px;
   padding: 8px 7px
 }
 .gallery-item:hover .gallery-caption {

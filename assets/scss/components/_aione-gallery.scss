@@ -140,7 +140,6 @@
     opacity: 1;
     visibility: visible;
     overflow: hidden;
-    background-color: #FFFFFF;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -184,11 +183,9 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    color: #FFFFFF;
     font-size: 16px;
     line-height: 22px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: all 0.35s ease-in-out;
@@ -202,7 +199,7 @@
     font-family: inherit;
     font-style: normal;
 }
-.title-m {
+.gallery-caption .aione-title {
     background-color: rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.1);
     font-size: 15px;
@@ -211,9 +208,9 @@
     text-transform: uppercase;
     word-break: break-all !important;
 }
-.excerpt-m {
-    font-size: 12px;
-    line-height: 15px;
+.gallery-caption .description {
+    font-size: 16px;
+    line-height: 18px;
     padding: 8px 7px;
 }
 .gallery-item:hover .gallery-caption {
