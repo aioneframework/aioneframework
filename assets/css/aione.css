@@ -38577,12 +38577,6 @@ input[type=file]:hover {
 .aione-progress-bar.active .aione-progress-bar-content {
   display: block
 }
-.gallery {
-  margin-top: 1em;
-  margin-left: -.5em;
-  margin-right: -.5em;
-  margin-bottom: 1.5em
-}
 .gallery:after {
   display: table;
   content: '';
