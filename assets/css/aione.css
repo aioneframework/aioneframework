@@ -921,6 +921,10 @@ table {
 .aione-main.sidebar-small .aione-content {
   width: calc(100% - 50px)
 }
+.aione-main.fullwidth .aione-content {
+  width: 100%;
+  float: none
+}
 .aione-page-content {
   margin: 10px 10px 20px 0;
   min-height: 400px
