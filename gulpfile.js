@@ -39,7 +39,7 @@ gulp.task('test-vendor-js', function() {
     return gulp.src(vendors)
 		.pipe(order(vendors,{ base: './' }))
         .pipe(concat('vendor.js'))
-        .pipe(gulp.dest('./test/js/'))
+        .pipe(gulp.dest('./assets/test/js/'))
         .pipe(rename('vendor.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/test/js/'));
@@ -48,7 +48,7 @@ gulp.task('test-scripts', function() {
     return gulp.src(scripts)
 		.pipe(order(scripts,{ base: './' }))
         .pipe(concat('aione.js'))
-        .pipe(gulp.dest('./test/js/'))
+        .pipe(gulp.dest('./assets/test/js/'))
         .pipe(rename('aione.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/test/js/'));
