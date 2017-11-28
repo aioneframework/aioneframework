@@ -25,6 +25,8 @@ var vendors = [
 		'bower_components/owl.carousel/dist/owl.carousel.js',
 		'bower_components/sweetalert/dist/sweetalert-dev.js',
 		'bower_components/Sortable/Sortable.js',
+		'bower_components/jquery-unveil/jquery.unveil.js',
+		'bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js',
 		//'bower_components/select2/dist/js/select2.js',
 		'bower_components/list.js/dist/list.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
