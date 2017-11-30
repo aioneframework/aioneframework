@@ -12,8 +12,8 @@ $(document).ready(function() {
 		    autoplayTimeout:2000,
 		    autoplayHoverPause:true,
 		    nav:true,
-		    animateOut: 'slideOutDown',
-    		animateIn: 'flipInX',
+		    //animateOut: 'slideOutDown',
+    		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
 	}catch(e){
