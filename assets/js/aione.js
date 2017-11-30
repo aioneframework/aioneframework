@@ -12,6 +12,7 @@ $(document).ready(function() {
 		    autoplayTimeout:2000,
 		    autoplayHoverPause:true,
 		    nav:true,
+		    autoHeight:true,
 		    //animateOut: 'slideOutDown',
     		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
