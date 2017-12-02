@@ -419,7 +419,14 @@ $(document).ready(function() {
 		}
 		//console.log(" theme = "+theme+" mode = "+mode+" index = "+index + " value = " + value );
 		//require.config({paths: { "ace" : "../lib/ace"}});
-		require("ace/ext/emmet");
+		//
+		try{
+			require("ace/ext/emmet");
+		}catch(e){
+
+		}
+		
+		
 		var editor = ace.edit(editor_wrappper_id);
 		editor.setValue($('#'+value).val()); 
 		editor.setTheme(theme);
