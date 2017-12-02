@@ -29,6 +29,8 @@ var vendors = [
 		'bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js',
 		//'bower_components/select2/dist/js/select2.js',
 		'bower_components/list.js/dist/list.js',
+		'bower_components/materialize/dist/js/materialize.js',
+		'bower_components/ace-builds/src/ace.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
 		];
 
