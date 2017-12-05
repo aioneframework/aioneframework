@@ -30,7 +30,7 @@ var vendors = [
 		//'bower_components/select2/dist/js/select2.js',
 		'bower_components/list.js/dist/list.js', 
 		'bower_components/materialize/dist/js/materialize.js',
-		'bower_components/clipboard/clipboard.js',
+		'bower_components/clipboard/dist/clipboard.js',
 		'bower_components/jquery-form-validator/form-validator/jquery.form-validator.js'
 		];
 

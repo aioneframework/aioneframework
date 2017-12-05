@@ -47,9 +47,12 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Copy to Clipboard
 	/*****************************************************/
-	new Clipboard('.clipboard');
 	try{
-		new Clipboard('.clipboard');
+		var clipboard = new Clipboard('.clipboard');
+		clipboard.on('success', function(e) {
+		    console.log("Copied '" + e.text + "' to clipboard");
+		    e.clearSelection();
+		});
 	}catch(e){
 
 	}
