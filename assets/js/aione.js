@@ -83,6 +83,15 @@ $(document).ready(function() {
 	});
 
 	/*****************************************************
+	/*  Aione Search
+	/*****************************************************/
+	var options = {
+	  valueNames: [ 'aione-nav-item' ]
+	};
+	var search = new List('aione-search', options);
+
+
+	/*****************************************************
 	/*  Aione Collapsible
 	/*****************************************************/
 	$('.aione-collapsible .aione-item-header').click(function(e){
