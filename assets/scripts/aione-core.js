@@ -73,8 +73,14 @@ $(document).ready(function() {
 
 	}
 
-	
+	/*****************************************************
+	/*  Animate on Hover 
+	/*****************************************************/
 
+	$(".animate-hover").hover(
+		function(){ $(this).addClass( "animated infinite" ); }, 
+		function(){ $(this).delay(200).removeClass( "animated infinite" );
+	});
 
 	/*****************************************************
 	/*  Aione Collapsible
