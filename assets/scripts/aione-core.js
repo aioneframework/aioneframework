@@ -86,7 +86,9 @@ $(document).ready(function() {
 	/*  Aione Search
 	/*****************************************************/
 	var options = {
-	  valueNames: [ 'aione-nav-item' ]
+	  valueNames: [ 'aione-nav-item' ],
+	  searchClass : 'aione-search-input',
+	  listClass: 'aione-search-list'
 	};
 	var search = new List('aione-search', options);
 
