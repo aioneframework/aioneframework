@@ -57,6 +57,24 @@ $(document).ready(function() {
 
 	}
 
+	/*****************************************************
+	/*  wow ja animate on scroll
+	/*****************************************************/
+	try{
+		wow = new WOW({
+			boxClass:     'animate',      // default
+			animateClass: 'animated', // default
+			offset:       0,          // default
+			mobile:       true,       // default
+			live:         true        // default
+  		})
+    	wow.init();
+	}catch(e){
+
+	}
+
+	
+
 
 	/*****************************************************
 	/*  Aione Collapsible

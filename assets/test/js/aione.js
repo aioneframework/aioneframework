@@ -12,8 +12,9 @@ $(document).ready(function() {
 		    autoplayTimeout:2000,
 		    autoplayHoverPause:true,
 		    nav:true,
-		    animateOut: 'slideOutDown',
-    		animateIn: 'flipInX',
+		    autoHeight:true,
+		    //animateOut: 'slideOutDown',
+    		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
 	}catch(e){
@@ -43,6 +44,37 @@ $(document).ready(function() {
 	}catch(e){
 
 	}
+	/*****************************************************
+	/*  Copy to Clipboard
+	/*****************************************************/
+	try{
+		var clipboard = new Clipboard('.clipboard');
+		clipboard.on('success', function(e) {
+		    console.log("Copied '" + e.text + "' to clipboard");
+		    e.clearSelection();
+		});
+	}catch(e){
+
+	}
+
+	/*****************************************************
+	/*  wow ja animate on scroll
+	/*****************************************************/
+	try{
+		wow = new WOW({
+			boxClass:     'animate',      // default
+			animateClass: 'animated', // default
+			offset:       0,          // default
+			mobile:       true,       // default
+			live:         true        // default
+  		})
+    	wow.init();
+	}catch(e){
+
+	}
+
+	
+
 
 	/*****************************************************
 	/*  Aione Collapsible
@@ -401,36 +433,49 @@ $(document).ready(function() {
     });
 
     $.each(editors, function( index, value ) {
-		var editor_wrappper_id = value+'_editor';
-		var theme = $('#'+editor_wrappper_id).attr("data-theme");
-		var mode = $('#'+editor_wrappper_id).attr("data-mode");
+    	try{
+			var editor_wrappper_id = value+'_editor';
+			var theme = $('#'+editor_wrappper_id).attr("data-theme");
+			var mode = $('#'+editor_wrappper_id).attr("data-mode");
 
-		if(theme == '' || theme == undefined ){
-			theme= "ace/theme/monokai";
-		} else {
-			theme= "ace/theme/"+theme;
-		}
+			if(theme == '' || theme == undefined ){
+				theme= "ace/theme/monokai";
+			} else {
+				theme= "ace/theme/"+theme;
+			}
 
-		if(mode == '' || mode == undefined ){
-			mode= "ace/mode/html";
-		} else {
-			mode= "ace/mode/"+mode;
+			if(mode == '' || mode == undefined ){
+				mode= "ace/mode/html";
+			} else {
+				mode= "ace/mode/"+mode;
+			}
+			//console.log(" theme = "+theme+" mode = "+mode+" index = "+index + " value = " + value );
+			//require.config({paths: { "ace" : "../lib/ace"}});
+			//
+			try{
+				require("ace/ext/emmet");
+			}catch(e){
+
+			}
+			
+			
+			var editor = ace.edit(editor_wrappper_id);
+			editor.setValue($('#'+value).val()); 
+			editor.setTheme(theme);
+			editor.getSession().setMode(mode);
+			editor.setAutoScrollEditorIntoView(true);
+			editor.setShowPrintMargin(false);
+			editor.setOption("enableEmmet", true); 
+			editor.setOption('enableBasicAutocompletion',true);
+			editor.setAutoScrollEditorIntoView(true);
+			editor.getSession().on("change", function () {
+				$('#'+value).val(editor.getSession().getValue());
+			});
+		
+		}catch(e){
+
 		}
-		//console.log(" theme = "+theme+" mode = "+mode+" index = "+index + " value = " + value );
-		//require.config({paths: { "ace" : "../lib/ace"}});
-		require("ace/ext/emmet");
-		var editor = ace.edit(editor_wrappper_id);
-		editor.setValue($('#'+value).val()); 
-		editor.setTheme(theme);
-		editor.getSession().setMode(mode);
-		editor.setAutoScrollEditorIntoView(true);
-		editor.setShowPrintMargin(false);
-		editor.setOption("enableEmmet", true); 
-		editor.setOption('enableBasicAutocompletion',true);
-		editor.setAutoScrollEditorIntoView(true);
-		editor.getSession().on("change", function () {
-			$('#'+value).val(editor.getSession().getValue());
-		});
+		
 	});
 
 	/*****************************************************

@@ -27,6 +27,7 @@ var vendors = [
 		'bower_components/Sortable/Sortable.js',
 		'bower_components/jquery-unveil/jquery.unveil.js',
 		'bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js',
+		'bower_components/wow/dist/wow.js',
 		//'bower_components/select2/dist/js/select2.js',
 		'bower_components/list.js/dist/list.js', 
 		'bower_components/materialize/dist/js/materialize.js',
