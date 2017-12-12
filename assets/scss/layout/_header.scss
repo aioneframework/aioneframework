@@ -3,21 +3,30 @@ HEADER
 ***************************************/
 
 .aione-header{
+	
+}
+.aione-header.light{
+	background-color: #ffffff;
+}
+.aione-header.dark{
 	background-color: #2d323e;
+}
+.aione-header.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 40px;
     z-index: 999;
 }
-.aione-header-left{
+.layout-header-top .aione-header{
+	float:none;
+}
+.layout-header-left .aione-header{
 	float:left;
-	text-align:left;
 }
-.aione-header-right{
-	float:right;
-	text-align:left;	
+.layout-header-right .aione-header{
+	float:right;	
 }
+
 
 
 .aione-header .aione-header-item{

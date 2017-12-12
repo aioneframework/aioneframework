@@ -4478,21 +4478,27 @@ table {
 .aione-wrapper.no-header .aione-main {
   padding-top: 0
 }
-.aione-header {
-  background-color: #2d323e;
+.aione-header.light,
+.page-footer .aione-header.footer-copyright {
+  background-color: #fff
+}
+.aione-header.dark {
+  background-color: #2d323e
+}
+.aione-header.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 40px;
   z-index: 999
 }
-.aione-header-left {
-  float: left;
-  text-align: left
+.layout-header-top .aione-header {
+  float: none
 }
-.aione-header-right {
-  float: right;
-  text-align: left
+.layout-header-left .aione-header {
+  float: left
+}
+.layout-header-right .aione-header {
+  float: right
 }
 .aione-header .aione-header-item {
   float: left;
@@ -5239,6 +5245,9 @@ table {
 .aione-breadcrumbs > li > ul::-webkit-scrollbar-thumb {
   background-color: #787a7e;
   border-radius: 6px
+}
+.rtl .aione-header {
+  text-align: left
 }
 img {
   max-width: 100%
