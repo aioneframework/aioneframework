@@ -4782,6 +4782,23 @@ table {
   color: #666;
   text-decoration: none
 }
+.aione-copyright {
+  color: #757575;
+  margin: 20px 0 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #e8e8e8;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Open Sans",Arial,Helvetica,sans-serif
+}
+.aione-copyright.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 98
+}
 .page-content {
   padding-top: 46px;
   padding-right: 0;
