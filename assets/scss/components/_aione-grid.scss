@@ -1,11 +1,16 @@
 /*************************************
 AIONE GRID
 ***************************************/
-.aione-grid-start{
-  color:aaaaaaaaaaaaaaaaaaaaaaaaaaaa;
-}
 $aione-columns:100;
-
+$i: 1;
+@while $i <= 20 {
+  $perc: unquote((100 / $i ) + "%");
+  .ar.columns-#{$i} .ac {
+    width: $perc;
+  }
+  $i: $i + 1;
+}
+.ar.columns-1 .ac{ float: none; }
 .ar{
 
   display:block;
@@ -334,9 +339,6 @@ $i: 0;
     }
     $i: $i + 1;
   }
-}
-.aione-grid-end{
-  color:bbbbbbbbbbbbbbbbbbbbbbbbbbb;
 }
 
 .last,
