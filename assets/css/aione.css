@@ -4489,7 +4489,7 @@ table {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999
+  z-index: 99
 }
 .layout-header-top .aione-header {
   float: none
@@ -4758,6 +4758,12 @@ table {
   font-weight: 400;
   text-align: center;
   font-family: "Open Sans",Arial,Helvetica,sans-serif
+}
+.aione-footer.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 98
 }
 .aione-footer .aione-row {
   padding: 0

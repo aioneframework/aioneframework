@@ -12,6 +12,12 @@ FOOTER
 	text-align:center;
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+.aione-footer.sticky{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 98;
+}
 .aione-footer .aione-row{
 	padding:0;
 }
