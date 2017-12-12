@@ -4759,6 +4759,15 @@ table {
   text-align: center;
   font-family: "Open Sans",Arial,Helvetica,sans-serif
 }
+.aione-footer.light,
+.page-footer .aione-footer.footer-copyright {
+  color: #757575;
+  background-color: #fff
+}
+.aione-footer.dark {
+  color: #fff;
+  background-color: #454545
+}
 .aione-footer.sticky {
   position: fixed;
   bottom: 0;
@@ -4770,28 +4779,78 @@ table {
 }
 .aione-footer a,
 .aione-footer a:visited {
-  color: #757575;
   text-decoration: none;
   webkit-transition: all 150ms ease-out;
   -moz-transition: all 150ms ease-out;
   -o-transition: all 150ms ease-out;
   transition: all 150ms ease-out
 }
-.aione-footer a:active,
-.aione-footer a:hover {
-  color: #666;
-  text-decoration: none
+.aione-footer.light a,
+.aione-footer.light a:visited,
+.page-footer .aione-footer.footer-copyright a,
+.page-footer .aione-footer.footer-copyright a:visited {
+  color: #666
+}
+.aione-footer.light a:active,
+.aione-footer.light a:hover,
+.page-footer .aione-footer.footer-copyright a:active,
+.page-footer .aione-footer.footer-copyright a:hover {
+  color: #454545
+}
+.aione-footer.dark a,
+.aione-footer.dark a:visited {
+  color: #f2f2f2
+}
+.aione-footer.dark a:active,
+.aione-footer.dark a:hover {
+  color: #e8e8e8
 }
 .aione-copyright {
   color: #757575;
-  margin: 20px 0 20px 0;
-  padding: 10px 0;
+  margin: 0;
+  padding: 4px 0;
   border-top: 1px solid #e8e8e8;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 400;
   text-align: center;
   font-family: "Open Sans",Arial,Helvetica,sans-serif
+}
+.aione-copyright a {
+  text-decoration: none;
+  webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+  transition: all 150ms ease-out
+}
+.aione-copyright.light,
+.page-footer .aione-copyright.footer-copyright {
+  color: #757575;
+  background-color: #fff
+}
+.aione-copyright.light a,
+.aione-copyright.light a:visited,
+.page-footer .aione-copyright.footer-copyright a,
+.page-footer .aione-copyright.footer-copyright a:visited {
+  color: #666
+}
+.aione-copyright.light a:active,
+.aione-copyright.light a:hover,
+.page-footer .aione-copyright.footer-copyright a:active,
+.page-footer .aione-copyright.footer-copyright a:hover {
+  color: #454545
+}
+.aione-copyright.dark {
+  color: #fff;
+  background-color: #333
+}
+.aione-copyright.dark a,
+.aione-copyright.dark a:visited {
+  color: #f8f8f8
+}
+.aione-copyright.dark a:active,
+.aione-copyright.dark a:hover {
+  color: #e8e8e8
 }
 .aione-copyright.sticky {
   position: fixed;
