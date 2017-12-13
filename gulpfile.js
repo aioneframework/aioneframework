@@ -105,6 +105,8 @@ gulp.task('makejs', ['make-scripts', 'make-vendor-js']);
 
 gulp.task('make', ['makecss', 'makejs']);
 
+gulp.task('test', ['testcss', 'testjs']);
+
 
 //BUILD
 
