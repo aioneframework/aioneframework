@@ -5,10 +5,31 @@ $aione-columns:100;
 $i: 1;
 @while $i <= 20 {
   $perc: unquote((100 / $i ) + "%");
-  .ar.columns-#{$i} .ac {
+  .ar.columns-#{$i} .ac,
+  .ar.s-columns-#{$i} .ac {
     width: $perc;
   }
   $i: $i + 1;
+}
+@media #{$medium-and-up} {
+  $i: 1;
+  @while $i <= 20 {
+    $perc: unquote((100 / $i ) + "%");
+    .ar.m-columns-#{$i} .ac {
+      width: $perc;
+    }
+    $i: $i + 1;
+  }
+}
+@media #{$large-and-up} {
+   $i: 1;
+   @while $i <= 20 {
+    $perc: unquote((100 / $i ) + "%");
+    .ar.l-columns-#{$i} .ac {
+      width: $perc;
+    }
+    $i: $i + 1;
+  }   
 }
 .ar.columns-1 .ac{ float: none; }
 .ar{
