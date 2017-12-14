@@ -103,7 +103,7 @@ $(document).ready(function() {
     	var options = {
 			valueNames: [ 'aione-search-item' ],
 			searchClass: 'aione-search-input',
-			searchClass: 'aione-sort-button',
+			sortClass: 'aione-sort-button',
 			listClass: 'aione-search-list'
 		};
 		var search = new List(aione_search, options);
