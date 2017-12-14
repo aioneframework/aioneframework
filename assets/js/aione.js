@@ -91,25 +91,23 @@ $(document).ready(function() {
 		var aione_search_id = $(this).attr("id");
 		if(aione_search_id != undefined){
 			aione_search_ids.push(aione_search_id);
-			console.log("=="+aione_search_id);
 		} else {
 			var aione_search_id = 'build_id_'+Math.floor(Math.random()*100000000);
 			$(this).attr("id", aione_search_id);
 			aione_search_ids.push(aione_search_id);
-			console.log("=="+aione_search_id);
 		}
     });
 
     $.each(aione_search_ids, function( index, aione_search ) {
-
+    	var searchable = $('#'+aione_search).find('aione-search-input').attr('data-search');
+    	console.log('--->'+searchable)
+    	var search_items = searchable;
     	var options = {
-			valueNames: [ 'aione-search-item' ],
+			valueNames: [ 'aione-search-item','age' ],
 			searchClass: 'aione-search-input',
-			sortClass: ['aione-sort-button','aione-sort-button2'],
+			sortClass: 'aione-sort-button',
 			listClass: 'aione-search-list'
 		};
-		console.log("-->");
-		console.log(aione_search);
 		var search = new List(aione_search, options);
     });
 
