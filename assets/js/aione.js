@@ -91,12 +91,12 @@ $(document).ready(function() {
 		var aione_search_id = $(this).attr("id");
 		if(aione_search_id != undefined){
 			aione_search_ids.push(aione_search_id);
-			console.log("=="+aione_search);
+			console.log("=="+aione_search_id);
 		} else {
 			var aione_search_id = 'build_id_'+Math.floor(Math.random()*100000000);
 			$(this).attr("id", aione_search_id);
 			aione_search_ids.push(aione_search_id);
-			console.log("=="+aione_search);
+			console.log("=="+aione_search_id);
 		}
     });
 
@@ -105,7 +105,7 @@ $(document).ready(function() {
     	var options = {
 			valueNames: [ 'aione-search-item' ],
 			searchClass: 'aione-search-input',
-			sortClass: 'aione-sort-button',
+			sortClass: ['aione-sort-button','aione-sort-button2'],
 			listClass: 'aione-search-list'
 		};
 		console.log("-->");
