@@ -85,13 +85,29 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Aione Search
 	/*****************************************************/
-	var options = {
-	  valueNames: [ 'aione-nav-item' ],
-	  searchClass : 'aione-search-input',
-	  listClass: 'aione-search-list'
-	};
-	var search = new List('aione-search', options);
 
+	var aione_search_ids = new Array();
+	$(".aione-search").each(function() {
+		var aione_search_id = $(this).attr("id");
+		if(aione_search_id != undefined){
+			aione_search_ids.push(aione_search_id);
+		} else {
+			var aione_search_id = 'build_id_'+Math.floor(Math.random()*100000000);
+			$(this).attr("id", aione_search_id);
+			aione_search_ids.push(aione_search_id);
+		}
+    });
+
+    $.each(aione_search_ids, function( index, aione_search ) {
+
+    	var options = {
+			valueNames: [ 'aione-search-item' ],
+			searchClass: 'aione-search-input',
+			searchClass: 'aione-sort-button',
+			listClass: 'aione-search-list'
+		};
+		var search = new List(aione_search, options);
+    });
 
 	/*****************************************************
 	/*  Aione Collapsible
