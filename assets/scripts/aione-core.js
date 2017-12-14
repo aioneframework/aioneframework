@@ -91,10 +91,12 @@ $(document).ready(function() {
 		var aione_search_id = $(this).attr("id");
 		if(aione_search_id != undefined){
 			aione_search_ids.push(aione_search_id);
+			console.log("=="+aione_search);
 		} else {
 			var aione_search_id = 'build_id_'+Math.floor(Math.random()*100000000);
 			$(this).attr("id", aione_search_id);
 			aione_search_ids.push(aione_search_id);
+			console.log("=="+aione_search);
 		}
     });
 
@@ -106,6 +108,8 @@ $(document).ready(function() {
 			sortClass: 'aione-sort-button',
 			listClass: 'aione-search-list'
 		};
+		console.log("-->");
+		console.log(aione_search);
 		var search = new List(aione_search, options);
     });
 
