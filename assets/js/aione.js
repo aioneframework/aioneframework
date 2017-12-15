@@ -92,18 +92,21 @@ $(document).ready(function() {
 		if(aione_search_id != undefined){
 			aione_search_ids.push(aione_search_id);
 		} else {
-			var aione_search_id = 'build_id_'+Math.floor(Math.random()*100000000);
+			var aione_search_id = 'search_id_'+Math.floor(Math.random()*100000000);
 			$(this).attr("id", aione_search_id);
 			aione_search_ids.push(aione_search_id);
 		}
     });
 
     $.each(aione_search_ids, function( index, aione_search ) {
-    	var searchable = $('#'+aione_search).find('aione-search-input').attr('data-search');
-    	console.log('--->'+searchable)
-    	var search_items = searchable;
+    	var searchable = $('#'+aione_search).find('.aione-search-input').attr('data-search');
+    	if(searchable == undefined || searchable == ""){
+			var search_items = ['aione-search-item'];
+		} else {
+			var search_items = searchable.split('|');
+		}
     	var options = {
-			valueNames: [ 'aione-search-item','age' ],
+			valueNames: search_items,
 			searchClass: 'aione-search-input',
 			sortClass: 'aione-sort-button',
 			listClass: 'aione-search-list'
