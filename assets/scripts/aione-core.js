@@ -103,8 +103,11 @@ $(document).ready(function() {
     	if(searchable == undefined || searchable == ""){
 			var search_items = ['aione-search-item'];
 		} else {
-			var search_items = searchable.split('|');
+			var search_items = searchable.split(' ');
 		}
+		console.log("=======");
+		console.log(search_items);
+
     	var options = {
 			valueNames: search_items,
 			searchClass: 'aione-search-input',
