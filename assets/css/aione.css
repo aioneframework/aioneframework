@@ -44198,6 +44198,15 @@ input[type=file]:hover {
   opacity: 1;
   background-color: transparent
 }
+.aione-sort-button {
+  cursor: pointer;
+  position: relative
+}
+.aione-sort-button.asc {
+  content: "";
+  position: absolute;
+  right: 0
+}
 .select2-container--open .select2-dropdown--above,
 .select2-container--open .select2-dropdown--below {
   background: #f2f2f2
