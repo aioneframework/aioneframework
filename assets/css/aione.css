@@ -42672,10 +42672,12 @@ input[type=file]:hover {
   border-bottom-left-radius: 3px
 }
 .aione-table table.compact > tbody > tr > td,
+.aione-table table.compact > tfoot > tr > td,
 .aione-table table.compact > thead > tr > th {
   padding: 5px
 }
 .aione-table table.wide > tbody > tr > td,
+.aione-table table.wide > tfoot > tr > td,
 .aione-table table.wide > thead > tr > th {
   padding: 20px 10px
 }
