@@ -41081,91 +41081,91 @@ button.picker__today:focus {
   display: table;
   clear: both
 }
-.aione-background.gradient-1 {
+.bg-gradient.gradient-1 {
   background-color: rgba(0,0,0,.85);
   background: rgba(153,93,179,.6);
   background-image: -webkit-linear-gradient(45deg,rgba(153,93,179,.6) 0,rgba(44,155,219,.6) 100%);
   background-image: -o-linear-gradient(45deg,rgba(153,93,179,.6) 0,rgba(44,155,219,.6) 100%);
   background-image: linear-gradient(45deg,rgba(153,93,179,.6) 0,rgba(44,155,219,.6) 100%)
 }
-.aione-background.gradient-2 {
+.bg-gradient.gradient-2 {
   background-color: #ffae27;
   background: #ffae27;
   background-image: -webkit-linear-gradient(45deg,#ffae27 0,#de496d 100%);
   background-image: -o-linear-gradient(45deg,#ffae27 0,#de496d 100%);
   background-image: linear-gradient(45deg,#ffae27 0,#de496d 100%)
 }
-.aione-background.gradient-3 {
+.bg-gradient.gradient-3 {
   background-color: #e05252;
   background: #e05252;
   background-image: -webkit-linear-gradient(330deg,#e05252 0,#99e052 25%,#52e0e0 50%,#9952e0 75%,#e05252 100%);
   background-image: -o-linear-gradient(330deg,#e05252 0,#99e052 25%,#52e0e0 50%,#9952e0 75%,#e05252 100%);
   background-image: linear-gradient(330deg,#e05252 0,#99e052 25%,#52e0e0 50%,#9952e0 75%,#e05252 100%)
 }
-.aione-background.gradient-4 {
+.bg-gradient.gradient-4 {
   background-color: #155799;
   background: #155799;
   background-image: -webkit-linear-gradient(120deg,#155799,#159957);
   background-image: -o-linear-gradient(120deg,#155799,#159957);
   background-image: linear-gradient(120deg,#155799,#159957)
 }
-.aione-background.gradient-5 {
+.bg-gradient.gradient-5 {
   background-color: #25a1c3;
   background: #25a1c3;
   background-image: -webkit-linear-gradient(left,#25a1c3 0,#64bc5b 100%);
   background-image: -o-linear-gradient(left,#25a1c3 0,#64bc5b 100%);
   background-image: linear-gradient(left,#25a1c3 0,#64bc5b 100%)
 }
-.aione-background.gradient-6 {
+.bg-gradient.gradient-6 {
   background-color: #d4fbad;
   background: #d4fbad;
   background-image: -webkit-linear-gradient(right bottom,#d4fbad 0,#58f9e9 100%);
   background-image: -o-linear-gradient(right bottom,#d4fbad 0,#58f9e9 100%);
   background-image: linear-gradient(right bottom,#d4fbad 0,#58f9e9 100%)
 }
-.aione-background.gradient-7 {
+.bg-gradient.gradient-7 {
   background-color: rgba(152,211,97,.9);
   background: rgba(152,211,97,.9);
   background-image: -webkit-linear-gradient(left,rgba(152,211,97,.9) 10%,rgba(86,180,211,.9) 90%);
   background-image: -o-linear-gradient(left,rgba(152,211,97,.9) 10%,rgba(86,180,211,.9) 90%);
   background-image: linear-gradient(left,rgba(152,211,97,.9) 10%,rgba(86,180,211,.9) 90%)
 }
-.aione-background.gradient-8 {
+.bg-gradient.gradient-8 {
   background-color: #556270;
   background: #556270;
   background-image: -webkit-linear-gradient(60deg,#556270 10%,#ff6b6b 90%);
   background-image: -o-linear-gradient(60deg,#556270 10%,#ff6b6b 90%);
   background-image: linear-gradient(60deg,#556270 10%,#ff6b6b 90%)
 }
-.aione-background.gradient-9 {
+.bg-gradient.gradient-9 {
   background-color: #3a88f4;
   background: #3a88f4;
   background-image: -webkit-linear-gradient(left,#3a88f4 0,#7854ae 50%,#cb2f70 100%);
   background-image: -o-linear-gradient(left,#3a88f4 0,#7854ae 50%,#cb2f70 100%);
   background-image: linear-gradient(left,#3a88f4 0,#7854ae 50%,#cb2f70 100%)
 }
-.aione-background.gradient-10 {
+.bg-gradient.gradient-10 {
   background-color: #ff7c00;
   background: #ff7c00;
   background-image: -webkit-linear-gradient(-45deg,#ff7c00 0,#2a0a59 100%);
   background-image: -o-linear-gradient(-45deg,#ff7c00 0,#2a0a59 100%);
   background-image: linear-gradient(-45deg,#ff7c00 0,#2a0a59 100%)
 }
-.aione-background.gradient-11 {
+.bg-gradient.gradient-11 {
   background-color: #4e75b9;
   background: #4e75b9;
   background-image: -webkit-linear-gradient(35deg,#4e75b9 29%,#5cbf98 90%);
   background-image: -o-linear-gradient(35deg,#4e75b9 29%,#5cbf98 90%);
   background-image: linear-gradient(35deg,#4e75b9 29%,#5cbf98 90%)
 }
-.aione-background.gradient-12 {
+.bg-gradient.gradient-12 {
   background-color: #bbffd0;
   background: #bbffd0;
   background-image: -webkit-linear-gradient(45deg,#bbffd0 29%,#5cbf98 90%);
   background-image: -o-linear-gradient(45deg,#bbffd0 29%,#5cbf98 90%);
   background-image: linear-gradient(45deg,#bbffd0 29%,#5cbf98 90%)
 }
-.aione-background.gradient-13 {
+.bg-gradient.gradient-13 {
   background-color: rgba(76,175,80,.4);
   background: rgba(76,175,80,.4);
   background-image: -webkit-linear-gradient(to right,rgba(76,175,80,.4),rgba(123,67,151,.6));
