@@ -4,11 +4,13 @@ $(document).ready(function() {
 	/*  Aione Templates
 	/*****************************************************/
 	try{
-		$(".aione-search").each(function() {
+		$(".load-template").each(function() {
 			var teplate_file = $(this).attr("data-src");
 			if(teplate_file != undefined){
 				var teplate_file = $(this).attr("id");
-				$(this).load('template/'+teplate_file+'.html');
+				if(teplate_file != undefined){
+					$(this).load('template/'+teplate_file+'.html');
+				}
 			} else {
 				$(this).load(teplate_file);
 			}
