@@ -6,13 +6,18 @@ $(document).ready(function() {
 	try{
 		$(".load-template").each(function() {
 			var teplate_file = $(this).attr("data-src");
+			console.log("1. Loading " + teplate_file);
 			if(teplate_file != undefined){
 				var teplate_file = $(this).attr("id");
+				console.log("2. Loading " + teplate_file);
 				if(teplate_file != undefined){
 					$(this).load('template/'+teplate_file+'.html');
+					console.log("4. Templete" + teplate_file + " Loaded");
 				}
 			} else {
+				console.log("3. Loading " + teplate_file);
 				$(this).load(teplate_file);
+				console.log("5. Templete" + teplate_file + " Loaded");
 			}
 	    });
 	}catch(e){
