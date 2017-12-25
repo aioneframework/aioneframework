@@ -1,6 +1,23 @@
 $(document).ready(function() {
 
 	/*****************************************************
+	/*  Aione Templates
+	/*****************************************************/
+	try{
+		$(".aione-search").each(function() {
+			var teplate_file = $(this).attr("data-src");
+			if(teplate_file != undefined){
+				var teplate_file = $(this).attr("id");
+				$(this).load('template/'+teplate_file+'.html');
+			} else {
+				$(this).load(teplate_file);
+			}
+	    });
+	}catch(e){
+
+	}
+
+	/*****************************************************
 	/*  Aione Slider
 	/*****************************************************/
 	try{
@@ -146,72 +163,76 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Show Form Fields when conditions are true
 	/*****************************************************/
-	$('.aione-form-wrapper').click(function(e){
-		var conditions = JSON.parse($(this).find('.form_conditions').val());
-		var form_id = $(this).attr('id');
-		$('#'+form_id+' .field-wrapper').each(function(ev){
-			
-			if($(this).attr('data-conditions') == 1){
-				var field_id = $(this).attr('id').replace("field_","");
-				var field_type = $(this).attr('data-field-type');
-				var field_conditions = conditions[field_id]['field_conditions'];
+	try{
+		$('.aione-form-wrapper').click(function(e){
+			var conditions = JSON.parse($(this).find('.form_conditions').val());
+			var form_id = $(this).attr('id');
+			$('#'+form_id+' .field-wrapper').each(function(ev){
+				
+				if($(this).attr('data-conditions') == 1){
+					var field_id = $(this).attr('id').replace("field_","");
+					var field_type = $(this).attr('data-field-type');
+					var field_conditions = conditions[field_id]['field_conditions'];
 
-				var show = [];
+					var show = [];
 
-				$(field_conditions).each(function(index, value){
-					var field_elem = $('#field_'+value.condition_column);
+					$(field_conditions).each(function(index, value){
+						var field_elem = $('#field_'+value.condition_column);
 
-					switch(field_elem.attr('data-field-type')){
-						case'checkbox':
-						case'switch':
-							if(field_elem.find('input').is(':checked')){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+						switch(field_elem.attr('data-field-type')){
+							case'checkbox':
+							case'switch':
+								if(field_elem.find('input').is(':checked')){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
 
-						case'text':
-							var condition = '"'+field_elem.find('input').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
-						case'radio':
-							var condition = '"'+field_elem.find('input:checked').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+							case'text':
+								var condition = '"'+field_elem.find('input').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
+							case'radio':
+								var condition = '"'+field_elem.find('input:checked').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
 
-						case'select':
-							var condition = '"'+field_elem.find('select').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							//console.log(condition);
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+							case'select':
+								var condition = '"'+field_elem.find('select').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								//console.log(condition);
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
+						}
+					});
+					if($.inArray('false',show) !== -1){
+						$(this).hide();
+					}else{
+						$(this).show();
 					}
-				});
-				if($.inArray('false',show) !== -1){
-					$(this).hide();
-				}else{
-					$(this).show();
+
+					/*console.log("=== FIELD Conditions");
+					console.log(field_conditions);
+					console.log("===================");*/
+
 				}
-
-				/*console.log("=== FIELD Conditions");
-				console.log(field_conditions);
-				console.log("===================");*/
-
-			}
+			});
 		});
-	});
+	}catch(e){
+
+	}
 
 	/*****************************************************
 	/*  On Start Show Form Fields where conditions are true

@@ -1,6 +1,23 @@
 $(document).ready(function() {
 
 	/*****************************************************
+	/*  Aione Templates
+	/*****************************************************/
+	try{
+		$(".aione-search").each(function() {
+			var teplate_file = $(this).attr("data-src");
+			if(teplate_file != undefined){
+				var teplate_file = $(this).attr("id");
+				$(this).load('template/'+teplate_file+'.html');
+			} else {
+				$(this).load(teplate_file);
+			}
+	    });
+	}catch(e){
+
+	}
+
+	/*****************************************************
 	/*  Aione Slider
 	/*****************************************************/
 	try{
