@@ -39,6 +39,9 @@ var scripts = [
 		'assets/scripts/aione-core.js'
 		];
 
+var minscripts = [
+		'../aioneframework.com/assets/js/ga.js'
+		];
 
 gulp.task('test-vendor-js', function() {  
     return gulp.src(vendors)
@@ -78,6 +81,15 @@ gulp.task('make-scripts', function() {
         .pipe(gulp.dest('./assets/js/'));
 });
 
+gulp.task('minjs', function() {  
+    return gulp.src(minscripts)
+		.pipe(order(minscripts,{ base: './' }))
+        .pipe(gulp.dest('../aioneframework.com/assets/js/'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('../aioneframework.com/assets/js/'));
+});
+
 gulp.task('makecss', function(){
 		return gulp.src('./assets/scss/*.scss')
 			.pipe(sass()) // Using gulp-sass
@@ -95,6 +107,15 @@ gulp.task('testcss', function(){
     		.pipe(gulp.dest('./assets/test/css/'));
 });
 
+gulp.task('mincss', function(){
+		return gulp.src('../aioneframework.com/assets/css/style.css')
+			.pipe(cleanCSS({format: 'beautify'}))
+    		.pipe(gulp.dest('../aioneframework.com/assets/css/'))
+			.pipe(cleanCSS({compatibility: 'ie8'}))
+			.pipe(rename({suffix: '.min'}))
+			.pipe(gulp.dest('../aioneframework.com/assets/css/'));
+});
+
 gulp.task('automakecss', function () {
   gulp.watch('./../public/../scss/**/*.scss', ['makecss']);
 });
@@ -103,7 +124,7 @@ gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
 gulp.task('makejs', ['make-scripts', 'make-vendor-js']);
 
-gulp.task('make', ['makecss', 'makejs']);
+gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
 
 gulp.task('test', ['testcss', 'testjs']);
 
