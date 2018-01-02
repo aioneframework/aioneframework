@@ -42658,6 +42658,9 @@ input[type=file]:hover {
 .aione-table table > tbody > tr > td:last-child {
   border-right: none
 }
+.aione-table table > tfoot > tr {
+  border-top: 1px solid #e8e8e8
+}
 .aione-table .rounded thead th:first-child {
   border-top-left-radius: 3px
 }
