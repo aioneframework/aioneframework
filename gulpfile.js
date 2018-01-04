@@ -89,12 +89,12 @@ gulp.task('make-vendor-js', function() {
         .pipe(gulp.dest('./assets/js/'));
 });
 
-gulp.task('make-vendor-lite-js', function() {  
+gulp.task('make-vendorlite-js', function() {  
     return gulp.src(vendors_lite)
 		.pipe(order(vendors_lite,{ base: './' }))
-        .pipe(concat('vendor-lite.js'))
+        .pipe(concat('vendorlite.js'))
         .pipe(gulp.dest('./assets/js/'))
-        .pipe(rename('vendor-lite.min.js'))
+        .pipe(rename('vendorlite.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js/'));
 });
@@ -154,7 +154,7 @@ gulp.task('automakecss', function () {
 
 gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
-gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendor-lite-js']);
+gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js']);
 
 gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs', 'copy-to-cdn']);
 
