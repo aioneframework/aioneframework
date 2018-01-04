@@ -8592,6 +8592,9 @@ img {
 .border-blue-grey.border-darken-4 {
   border-color: #263238
 }
+.bg-blue-grey.bg-lighten-0{
+  background-color:#507fa6;
+}
 .grey {
   color: #9e9e9e
 }
@@ -8694,6 +8697,7 @@ img {
 .white {
   color: #fff
 }
+
 .bg-white {
   background-color: #fff
 }
