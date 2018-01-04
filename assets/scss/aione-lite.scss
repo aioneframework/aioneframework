@@ -20,28 +20,6 @@ Aione layout
 @import "components/color";
 
 
-
-// sweetalert
-@import "../../bower_components/sweetalert/dev/sweetalert";
-//font-awesome
-@import "../../bower_components/font-awesome/scss/font-awesome";
-//owl.carousel
-@import "../../bower_components/owl.carousel/src/scss/owl.carousel.scss";
-@import "../../bower_components/owl.carousel/src/scss/owl.theme.default.scss";
-
-//Select2
-@import "../../bower_components/select2/dist/css/select2.css";
-@import "../../bower_components/jquery-prettyPhoto/css/prettyPhoto.css";
-@import "../../bower_components/animate.css/animate.css";
-
-
-//TODO
-
-// Materialize Mixins
-//@import "../../bower_components/materialize/sass/components/prefixer";
-//@import "../../bower_components/materialize/sass/components/mixins";
-//@import "../../bower_components/materialize/sass/components/color";
-
 // Materialize Variables;
 @import "../../bower_components/materialize/sass/components/variables";
 
@@ -52,9 +30,9 @@ Aione layout
 @import "../../bower_components/materialize/sass/components/global";
 @import "../../bower_components/materialize/sass/components/badges";
 @import "../../bower_components/materialize/sass/components/icons-material-design";
-@import "../../bower_components/materialize/sass/components/grid";
+//@import "../../bower_components/materialize/sass/components/grid";
 //@import "../../bower_components/materialize/sass/components/navbar";
-@import "../../bower_components/materialize/sass/components/roboto";
+//@import "../../bower_components/materialize/sass/components/roboto";
 @import "../../bower_components/materialize/sass/components/typography";
 @import "../../bower_components/materialize/sass/components/transitions";
 @import "../../bower_components/materialize/sass/components/cards";
@@ -73,16 +51,16 @@ Aione layout
 //@import "../../bower_components/materialize/sass/components/sideNav";
 @import "../../bower_components/materialize/sass/components/preloader";
 @import "../../bower_components/materialize/sass/components/slider";
-@import "../../bower_components/materialize/sass/components/carousel";
+//@import "../../bower_components/materialize/sass/components/carousel";
 @import "../../bower_components/materialize/sass/components/tapTarget";
 @import "../../bower_components/materialize/sass/components/pulse";
-@import "../../bower_components/materialize/sass/components/date_picker/default";
-@import "../../bower_components/materialize/sass/components/date_picker/default.date";
-@import "../../bower_components/materialize/sass/components/date_picker/default.time";
+//@import "../../bower_components/materialize/sass/components/date_picker/default";
+//@import "../../bower_components/materialize/sass/components/date_picker/default.date";
+//@import "../../bower_components/materialize/sass/components/date_picker/default.time";
 
 
 //Select2
-@import "../../bower_components/select2/src/scss/core.scss"; 
+//@import "../../bower_components/select2/src/scss/core.scss"; 
 
 
 
@@ -108,9 +86,9 @@ Aione layout
 
 
 //Select 2 Aione Theme Style Overide
-@import "components/select2-aione-theme";
+//@import "components/select2-aione-theme";
 
 //Spactrum Color Picker Style Overide
-@import "components/color-picker-aione-theme";
+//@import "components/color-picker-aione-theme";
 
 
