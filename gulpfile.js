@@ -55,6 +55,10 @@ var vendors_lite = [
 var scripts = [
 		'assets/scripts/aione-core.js'
 		];
+var scripts_full = [
+		'bower_components/jquery/dist/jquery.js',
+		'assets/scripts/aione-core.js'
+		];
 
 var minscripts = [
 		'../aioneframework.com/assets/js/ga.js'
@@ -109,6 +113,16 @@ gulp.task('make-scripts', function() {
         .pipe(gulp.dest('./assets/js/'));
 });
 
+gulp.task('make-full-js', function() {  
+    return gulp.src(scripts_full)
+		.pipe(order(scripts_full,{ base: './' }))
+        .pipe(concat('aionefull.js'))
+        .pipe(gulp.dest('./assets/js/'))
+        .pipe(rename('aionefull.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./assets/js/'));
+});
+
 gulp.task('minjs', function() {  
     return gulp.src(minscripts)
 		.pipe(order(minscripts,{ base: './' }))
@@ -154,7 +168,7 @@ gulp.task('automakecss', function () {
 
 gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
-gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js']);
+gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'make-full-js']);
 
 gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs', 'copy-to-cdn']);
 
