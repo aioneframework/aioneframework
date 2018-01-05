@@ -36167,6 +36167,14 @@ button.btn-floating {
   background-image: -o-linear-gradient(to right,rgba(76,175,80,.4),rgba(123,67,151,.6));
   background-image: linear-gradient(to right,rgba(76,175,80,.4),rgba(123,67,151,.6))
 }
+.bg-gradient.gradient-check {
+  background: -webkit-linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),-webkit-linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),#fff;
+  background: -moz-linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),-moz-linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),#fff;
+  background: linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),linear-gradient(45deg,rgba(0,0,0,.0980392) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.0980392) 75%,rgba(0,0,0,.0980392) 0),#fff;
+  background-repeat: repeat;
+  background-size: 26px 26px;
+  background-position: 0 0,13px 13px
+}
 html {
   line-height: 1.4;
   font-family: "Open Sans",Arial,sans-serif;
