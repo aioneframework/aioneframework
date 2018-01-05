@@ -8595,6 +8595,9 @@ img {
 .bg-blue-grey.bg-lighten-0{
   background-color:#507fa6;
 }
+.blue-grey.lighten-0{
+  color:#507fa6;
+}
 .grey {
   color: #9e9e9e
 }

@@ -7,6 +7,8 @@ var rename 		= require("gulp-rename");
 var sass 		= require('gulp-sass');
 var order 		= require('gulp-order');
 let cleanCSS 	= require('gulp-clean-css');
+//var webshot		= require('gulp-webshot');
+var webshot =       require('webshot');
 
 /*gulp.task('inject', function(){
 	var target = gulp.src('index.html');
@@ -181,3 +183,36 @@ gulp.task('test', ['testcss', 'testjs']);
 
 // Default Task
 //gulp.task('default', ['build']);
+//
+//
+gulp.task('screenshots', function() {
+	//console.log(process.argv);
+	var arguments = process.argv;
+
+	var source = arguments[3].replace('--source=','');
+	var dest = arguments[4].replace('--dest=','');
+	//var options = arguments[5].replace('--options=','');
+
+	var options = {
+	  renderDelay:3000,
+	  quality:75,
+	  streamType:'jpg',
+	  screenSize: {
+	    width: 1200,
+	    height: 900
+	  },
+	  shotSize: {
+	    width: 1200,
+	    height: 'all'
+	  },
+	  userAgent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36'
+	};
+
+
+    webshot(source,dest,options,function(err){
+        console.log('Done');
+    });
+})
+
+gulp.task('capture', ['screenshots']);
+

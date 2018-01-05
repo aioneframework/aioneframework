@@ -8,14 +8,15 @@
     "gulp-install": "^1.1.0"
   },
   "devDependencies": {
-    "gulp-clean-css"  : "latest",
-    "gulp-concat"     : "latest",
-    "gulp-inject"     : "latest",
-    "gulp-order"      : "latest",
-    "gulp-rename"     : "latest",
-    "gulp-sass"       : "latest",
-    "gulp-uglify"     : "latest",
-    "gulp-useref"     : "latest"
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-inject": "latest",
+    "gulp-order": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "gulp-webshot": "^0.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
