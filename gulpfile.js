@@ -195,15 +195,13 @@ gulp.task('screenshots', function() {
 
 	var options = {
 	  renderDelay:3000,
-	  quality:75,
-	  streamType:'jpg',
 	  screenSize: {
 	    width: 1200,
 	    height: 900
 	  },
 	  shotSize: {
 	    width: 1200,
-	    height: 'all'
+	    height: 900
 	  },
 	  userAgent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36'
 	};
