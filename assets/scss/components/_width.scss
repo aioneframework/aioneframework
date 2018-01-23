@@ -1,0 +1,33 @@
+/*************************************
+WIDTH
+***************************************/
+$aione-columns:100;
+$i: 1;
+@while $i <= 100 {
+  $perc: unquote((100 / $i ) + "%");
+  .width-#{$i},
+  .s-width-#{$i}{
+    width: $perc;
+  }
+  $i: $i + 1;
+}
+@media #{$medium-and-up} {
+  $i: 1;
+  @while $i <= 100 {
+    $perc: unquote((100 / $i ) + "%");
+    .m-width-#{$i} {
+      width: $perc;
+    }
+    $i: $i + 1;
+  }
+}
+@media #{$large-and-up} {
+   $i: 1;
+   @while $i <= 100 {
+    $perc: unquote((100 / $i ) + "%");
+    .l-width-#{$i} {
+      width: $perc;
+    }
+    $i: $i + 1;
+  }   
+}
