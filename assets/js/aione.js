@@ -124,8 +124,7 @@ $(document).ready(function() {
 		} else {
 			var search_items = searchable.split(' ');
 		}
-		console.log("=======");
-		console.log(search_items);
+		
 
     	var options = {
 			valueNames: search_items,
