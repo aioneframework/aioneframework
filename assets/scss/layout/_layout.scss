@@ -24,3 +24,17 @@ LAYOUT
 .aione-wrapper.no-header .aione-main{
 	padding-top: 0px;
 }
+
+.aione-layout-boxed .wrapper{
+	max-width:1600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.aione-layout-wide .aione-header .wrapper,
+.aione-layout-wide .aione-main .wrapper,
+.aione-layout-wide .aione-footer .wrapper,
+.aione-layout-wide .aione-copyright .wrapper{
+	max-width:1600px;
+	margin-left:auto;
+	margin-right:auto;
+}

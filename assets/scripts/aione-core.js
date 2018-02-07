@@ -153,6 +153,20 @@ $(document).ready(function() {
 	})
 
 	/*****************************************************
+	/*  Aione Collapsible
+	/*****************************************************/
+
+	$('.aione-more-toggle').click(function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+		if($(this).parent().hasClass('active')){
+			$(this).html('Show Less');
+		} else {
+			$(this).html('Show More');
+		} 
+	});
+
+	/*****************************************************
 	/*  Hide Form Fields with conditions
 	/*****************************************************/
 	$('.field-wrapper').each(function(e){
