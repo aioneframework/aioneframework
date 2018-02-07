@@ -124,7 +124,8 @@ $(document).ready(function() {
 		} else {
 			var search_items = searchable.split(' ');
 		}
-		
+		console.log("=======");
+		console.log(search_items);
 
     	var options = {
 			valueNames: search_items,
@@ -150,6 +151,20 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parent().toggleClass('active').siblings().removeClass('active'); 
 	})
+
+	/*****************************************************
+	/*  Aione Collapsible
+	/*****************************************************/
+
+	$('.aione-more-toggle').click(function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+		if($(this).parent().hasClass('active')){
+			$(this).html('Show Less');
+		} else {
+			$(this).html('Show More');
+		} 
+	});
 
 	/*****************************************************
 	/*  Hide Form Fields with conditions
