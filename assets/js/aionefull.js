@@ -10277,6 +10277,8 @@ $(document).ready(function() {
 	/*  Aione Slider
 	/*****************************************************/
 	try{
+        var DataJson = $('.aione-slider').data();
+        $(".aione-slider").owlCarousel(DataJson);
 		$(".aione-slider").owlCarousel({
 			
 		    items:1,
