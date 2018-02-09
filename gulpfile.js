@@ -172,7 +172,7 @@ gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
 gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'make-full-js']);
 
-gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs', 'copy-to-cdn']);
+gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
 
 gulp.task('test', ['testcss', 'testjs']);
 
