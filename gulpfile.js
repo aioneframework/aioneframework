@@ -184,8 +184,7 @@ gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
 
 gulp.task('test', ['testcss', 'testjs']);
 
-// gulp.task('makewp', ['wpcss', 'wpjs']);
-gulp.task('makewp', ['wpcss']);
+gulp.task('makewp', ['wpcss', 'wpjs']);
 
 
 //BUILD
