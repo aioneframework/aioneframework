@@ -180,9 +180,9 @@ gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
 gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'make-full-js']);
 
-gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
-
 gulp.task('test', ['testcss', 'testjs']);
+
+gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
 
 gulp.task('makewp', ['wpcss', 'wpjs']);
 

@@ -48801,50 +48801,6 @@ input[type=file]:hover {
 .pagination li.active span {
   color: #fff
 }
-.aione-tabs-wrapper .aione-nav {
-  background-color: #fff;
-  box-shadow: none
-}
-.aione-tabs-content-wrapper {
-  display: block
-}
-.aione-tab-content {
-  display: none
-}
-.aione-tab-content.active {
-  display: block
-}
-.aione-tabs:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  clear: both
-}
-.aione-tabs > .aione-tab {
-  border-bottom: 1px solid #e8e8e8
-}
-.aione-tabs > .aione-tab:first-child {
-  border-top: none
-}
-.aione-tabs > .aione-tab.active {
-  border: 1px solid #e8e8e8;
-  border-bottom: none;
-  background-color: #fff
-}
-.aione-tabs > .aione-tab.active:hover {
-  background-color: #f2f2f2
-}
-.aione-tabs > .aione-tab > a {
-  color: #666;
-  padding: 0 10px
-}
-.aione-tabs > .aione-tab > a:hover {
-  color: #666
-}
-.aione-tabs > .aione-tab.active > a {
-  color: #454545
-}
 .aione-nav-tabs {
   padding: 0;
   margin: 0 0 20px 0;
@@ -48911,51 +48867,189 @@ input[type=file]:hover {
   color: #454545;
   font-weight: 600
 }
-.aione-tabs-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none
-}
-.aione-tabs-nav ul:after {
+.aione-tabs:after {
   content: "";
   display: table;
   clear: both
 }
-.aione-tabs-nav li {
-  position: relative;
-  cursor: pointer;
-  color: #666;
-  font-size: 20px;
+.aione-tabs .nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.aione-tabs .nav:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.aione-tabs .nav > * {
+  margin: 0;
+  padding: 6px 15px;
+  color: #484848;
+  font-size: 17.6px;
   line-height: 1.5;
-  background: #f2f2f2
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out
 }
-.aione-tabs-nav li:hover {
-  background-color: #e8e8e8
+.aione-tabs .nav > :hover {
+  color: #444
 }
-.aione-tabs-nav li.active {
-  color: #fff;
-  background-color: #168dc5
-}
-.aione-tabs-nav ul li .aione-tab-icon {
-  font-size: 50px;
-  line-height: 60px
-}
-.aione-tabs-content > div {
+.aione-tabs .content > * {
   display: none
 }
-.aione-tabs-content > div.active {
+.aione-tabs .content > .active {
   display: block
 }
-.aione-tabs-nav.horizontal li {
+.aione-tabs.horizontal > .nav > * {
   display: inline-block;
-  float: left;
-  text-align: center;
-  padding: 20px 15px
+  text-align: center
 }
-.aione-tabs-nav.horizontal li:last-child {
+.aione-tabs.horizontal.margin > .nav > * {
+  margin-right: 15px
+}
+.aione-tabs.horizontal.margin > .nav > :last-child {
   margin-right: 0
 }
-.aione-tabs-nav.horizontal li:after {
+.aione-tabs.horizontal.align-left > .nav {
+  text-align: left
+}
+.aione-tabs.horizontal.align-right > .nav {
+  text-align: right
+}
+.aione-tabs.horizontal.align-center > .nav {
+  text-align: center
+}
+.aione-tabs.vertical > .nav {
+  width: 30%;
+  float: left
+}
+.aione-tabs.vertical > .content {
+  width: 68%;
+  float: right
+}
+.aione-tabs.vertical.layout-right > .nav {
+  float: right
+}
+.aione-tabs.vertical.layout-right > .content {
+  float: left
+}
+.aione-tabs.vertical > .nav > * {
+  display: block;
+  text-align: left;
+  padding-left: 15px
+}
+.aione-tabs.vertical.margin > .nav > * {
+  margin-bottom: 15px
+}
+.aione-tabs.vertical.margin > .nav > :last-child {
+  margin-bottom: 0
+}
+.aione-tabs.vertical.align-left > .nav > * {
+  text-align: left
+}
+.aione-tabs.vertical.align-right > .nav > * {
+  text-align: right
+}
+.aione-tabs.vertical.align-center > .nav > * {
+  text-align: center
+}
+.aione-tabs.horizontal.theme-clean > .nav {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8
+}
+.aione-tabs.horizontal.theme-clean > .nav > * {
+  border: 1px solid transparent;
+  border-bottom: none;
+  margin-right: 0
+}
+.aione-tabs.horizontal.theme-clean > .nav > .active {
+  border: 1px solid #e8e8e8;
+  border-bottom: none
+}
+.aione-tabs.horizontal.theme-clean > .nav > :after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out
+}
+.aione-tabs.horizontal.theme-clean > .nav > .active:after {
+  background-color: #fff
+}
+.aione-tabs.vertical.theme-clean > .nav {
+  border: 1px solid #e8e8e8
+}
+.aione-tabs.vertical.theme-clean > .nav > * {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 0
+}
+.aione-tabs.vertical.theme-clean > .nav > :last-child {
+  border-bottom: none
+}
+.aione-tabs.vertical.theme-clean > .nav > :after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out
+}
+.aione-tabs.vertical.theme-clean > .nav > .active:after {
+  background-color: #fff
+}
+.aione-tabs.vertical.theme-clean.layout-right > .nav > :after {
+  left: -1px;
+  right: auto
+}
+.aione-tabs.horizontal.theme-bold > .nav {
+  margin-bottom: 20px
+}
+.aione-tabs.horizontal.theme-bold > .nav > * {
+  border-bottom: none;
+  margin-right: 0
+}
+.aione-tabs.horizontal.theme-bold > .nav > :hover {
+  background: #f2f2f2
+}
+.aione-tabs.horizontal.theme-bold > .nav > .active {
+  border-bottom: none;
+  background: #168dc5;
+  color: #fff
+}
+.aione-tabs.horizontal.theme-bold > .nav > .active:hover {
+  background: #1570a6
+}
+.aione-tabs.vertical.theme-bold > .nav > * {
+  border-bottom: 1px solid #e8e8e8
+}
+.aione-tabs.vertical.theme-bold > .nav > .active {
+  border-bottom: 1px solid #168dc5;
+  background: #168dc5;
+  color: #fff
+}
+.aione-tabs.vertical.theme-bold > .nav > .active:hover {
+  background: #1570a6;
+  border-bottom: 1px solid #1570a6
+}
+.aione-tabs.vertical.theme-bold > .nav > :hover {
+  background: #f2f2f2
+}
+.aione-tabs.horizontal.theme-pointer > .nav {
+  margin-bottom: 20px
+}
+.aione-tabs.horizontal.theme-pointer > .nav > :after {
   content: '';
   display: none;
   position: absolute;
@@ -48967,87 +49061,170 @@ input[type=file]:hover {
   border-top: 16px solid #168dc5;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  -moz-transition: all .2s ease-in-out 0s;
-  -webkit-transition: all .2s ease-in-out 0s;
-  transition: all .2s ease-in-out 0s
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out
 }
-.aione-tabs-nav.horizontal li.active:after {
+.aione-tabs.horizontal.theme-pointer > .nav > .active {
+  color: #fff;
+  background: #168dc5
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:hover {
+  background: #1570a6
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:after {
   display: block;
   bottom: -16px;
   border-top-color: #168dc5
 }
-.aione-tabs-nav.vertical li {
-  display: block;
-  text-align: left;
-  padding-left: 15px
+.aione-tabs.horizontal.theme-pointer > .nav > .active:hover:after {
+  border-top-color: #1570a6
 }
-.aione-tabs-nav.vertical li:after {
+.aione-tabs.vertical.theme-pointer > .nav {
+  margin-bottom: 20px
+}
+.aione-tabs.vertical.theme-pointer > .nav > :after {
   content: '';
+  display: none;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-right: 1px solid #d2d2d2;
-  border-bottom: 1px solid #d2d2d2;
-  top: 20px;
-  right: 15px;
-  transform: rotate(-45deg);
-  -moz-transition: all .2s ease-in-out 0s;
-  -webkit-transition: all .2s ease-in-out 0s;
-  transition: all .2s ease-in-out 0s
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 100%;
+  border-top: 12px solid transparent;
+  border-left: 16px solid #168dc5;
+  border-right: 12px solid transparent;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out
 }
-.aione-tabs-nav.vertical li:hover:after {
+.aione-tabs.vertical.theme-pointer > .nav > .active {
+  color: #fff;
+  background: #168dc5
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active:hover {
+  background: #1570a6
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active:after {
+  display: block;
+  bottom: -16px
+}
+.aione-tabs.horizontal.theme-pointer > .nav > :after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -12px;
+  border-top: 16px solid #168dc5;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:after {
+  display: block;
+  bottom: -16px;
+  border-top-color: #168dc5
+}
+.aione-tabs.vertical.theme-pointer > .nav > :after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  top: calc(50% - 12px);
+  border-top: 12px solid transparent;
+  border-left: 16px solid #168dc5;
+  border-bottom: 12px solid transparent
+}
+.aione-tabs.vertical.theme-pointer > .nav > *li:hover:after {
   right: 10px;
   border-color: #666
 }
-.aione-tabs-nav.vertical li.active:after {
+.aione-tabs.vertical.theme-pointer > .nav > *li.active:after {
   border-color: #fff;
   right: 10px
 }
-.aione-tabs-nav.theme-pastel li {
+.aione-tabs.theme-pastel > .nav {
+  margin-bottom: 20px
+}
+.aione-tabs.theme-pastel > .nav > * {
   color: #fff
 }
-.aione-tabs-nav.theme-pastel li.active {
-  color: #fff
-}
-.aione-tabs-nav.theme-pastel li:nth-child(1) {
+.aione-tabs.theme-pastel > .nav > :nth-child(1) {
   background-color: #1e729a
 }
-.aione-tabs-nav.theme-pastel li:nth-child(2) {
+.aione-tabs.theme-pastel > .nav > :nth-child(2) {
   background-color: #54a7a7
 }
-.aione-tabs-nav.theme-pastel li:nth-child(3) {
+.aione-tabs.theme-pastel > .nav > :nth-child(3) {
   background-color: #dec383
 }
-.aione-tabs-nav.theme-pastel li:nth-child(4) {
+.aione-tabs.theme-pastel > .nav > :nth-child(4) {
   background-color: #ed8d75
 }
-.aione-tabs-nav.theme-pastel li:nth-child(5) {
+.aione-tabs.theme-pastel > .nav > :nth-child(5) {
   background-color: #ff8282
 }
-.aione-tabs-nav.theme-pastel li:nth-child(6) {
+.aione-tabs.theme-pastel > .nav > :nth-child(6) {
   background-color: #8296a0
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(1):after {
+.aione-tabs.theme-pastel > .nav > :nth-child(7) {
+  background-color: #1e729a
+}
+.aione-tabs.theme-pastel > .nav > :nth-child(8) {
+  background-color: #54a7a7
+}
+.aione-tabs.theme-pastel > .nav > :nth-child(9) {
+  background-color: #dec383
+}
+.aione-tabs.theme-pastel > .nav > :nth-child(10) {
+  background-color: #ed8d75
+}
+.aione-tabs.theme-pastel > .nav > :nth-child(11) {
+  background-color: #ff8282
+}
+.aione-tabs.theme-pastel > .nav > :nth-child(12) {
+  background-color: #8296a0
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(1):after {
   border-top-color: #1e729a
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(2):after {
+.aione-tabs.theme-pastel > .nav > .active:nth-child(2):after {
   border-top-color: #54a7a7
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(3):after {
+.aione-tabs.theme-pastel > .nav > .active:nth-child(3):after {
   border-top-color: #dec383
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(4):after {
+.aione-tabs.theme-pastel > .nav > .active:nth-child(4):after {
   border-top-color: #ed8d75
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(5):after {
+.aione-tabs.theme-pastel > .nav > .active:nth-child(5):after {
   border-top-color: #ff8282
 }
-.aione-tabs-nav.theme-pastel li.active:nth-child(6):after {
+.aione-tabs.theme-pastel > .nav > .active:nth-child(6):after {
   border-top-color: #8296a0
 }
-.aione-tabs-nav li {
-  width: 15%;
-  margin-right: 2%
+.aione-tabs.theme-pastel > .nav > .active:nth-child(7):after {
+  border-top-color: #1e729a
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(8):after {
+  border-top-color: #54a7a7
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(9):after {
+  border-top-color: #dec383
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(10):after {
+  border-top-color: #ed8d75
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(11):after {
+  border-top-color: #ff8282
+}
+.aione-tabs.theme-pastel > .nav > .active:nth-child(12):after {
+  border-top-color: #8296a0
 }
 .aione-progress-bar {
   margin-bottom: 20px;

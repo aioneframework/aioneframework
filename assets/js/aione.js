@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
 	/*****************************************************
+	/*  Aione tabs
+	/*****************************************************/
+	$( ".aione-tabs > .nav > *" ).click(function(e) {
+	  e.preventDefault();
+	  $(this).addClass("active").siblings().removeClass('active');
+	  var target = $(this).attr("data-target");
+	  if(target  != undefined){
+	      $(target).addClass("active").siblings().removeClass('active');
+	  }
+	});
+
+    /*****************************************************
 	/*  Aione Templates
 	/*****************************************************/
 	try{
@@ -351,19 +363,6 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 	});
 
-
-
-	/*****************************************************
-	/*  Aione tabs
-	/*****************************************************/
-	$( ".aione-tabs > .nav > *" ).click(function(e) {
-        e.preventDefault();
-        $(this).addClass("active").siblings().removeClass('active');
-        var target = $(this).attr("data-target");
-        if(target  != undefined){
-            $(target).addClass("active").siblings().removeClass('active');
-        }
-    });
 
 	/*****************************************************
 	/*  Aione FORM Section Accordion
