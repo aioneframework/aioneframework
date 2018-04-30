@@ -10330,12 +10330,20 @@ $(document).ready(function() {
 	try{
 		var clipboard = new Clipboard('.clipboard');
 		clipboard.on('success', function(e) {
+    		console.info('Action:', e.action);
+    		console.info('Trigger:', e.trigger);
 		    console.log("Copied '" + e.text + "' to clipboard");
 		    e.clearSelection();
 		});
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+		});
 	}catch(e){
-
+		console.log("Filed to copy to clipboard");
 	}
+
+
 
 	/*****************************************************
 	/*  wow ja animate on scroll
