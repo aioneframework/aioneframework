@@ -182,7 +182,7 @@ gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'ma
 
 gulp.task('test', ['testcss', 'testjs']);
 
-gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
+gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs','copy-to-cdn']);
 
 gulp.task('makewp', ['wpcss', 'wpjs']);
 

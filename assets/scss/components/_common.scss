@@ -337,6 +337,26 @@ COMMON
 
 
 
+.aione-code {
+    margin: 0;
+    padding: 0;
+    width: 99.5%;
+    width: calc( 100% - 10px );
+    font-size: 13px;
+    line-height: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-indent: 0px;
+    color: #eceff1;
+    background-color: transparent;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
+    background-size: 100% 36px;
+    border: none;
+    border-radius: 0px;
+    min-height: 350px;
+}
+
+
 
 
 
