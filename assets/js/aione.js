@@ -35,11 +35,11 @@ $(document).ready(function() {
 	/*  Aione Slider
 	/*****************************************************/
 	try{
-        var DataJson = $('.aaaaaa').data();
+        var DataJson = $('.aione-slider').data();
         console.log("Slider Json Data");
         console.log(DataJson);
         //$(".aione-slider").owlCarousel(DataJson);
-        /*
+        
 		$(".aione-slider").owlCarousel({
 			
 		    items:1,
@@ -53,7 +53,7 @@ $(document).ready(function() {
     		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
-		*/
+		
 		
 	}catch(e){
 
