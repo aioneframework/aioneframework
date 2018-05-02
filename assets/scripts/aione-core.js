@@ -35,12 +35,12 @@ $(document).ready(function() {
 	/*  Aione Slider
 	/*****************************************************/
 	try{
-        var DataJson = $('.aione-slider').data();
+        var DataJson = $('.slider').data();
         console.log("Slider Json Data");
         console.log(DataJson);
         //$(".aione-slider").owlCarousel(DataJson);
         
-		$(".aione-slider").owlCarousel({
+		$(".slider").owlCarousel({
 			
 		    items:1,
 		    loop:true,

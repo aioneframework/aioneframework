@@ -168,8 +168,13 @@ gulp.task('wpjs', function(){
 		return gulp.src(['./assets/js/*.js'])
 		.pipe(gulp.dest('../../aione/wp-content/themes/aione/assets/js/'));
 });
-gulp.task('copy-to-cdn', function(){
-	return gulp.src(['assets/**/*']).pipe(gulp.dest('../cdn/assets'));
+gulp.task('cdncss', function(){
+		return gulp.src(['./assets/css/*.css'])
+		.pipe(gulp.dest('../cdn/assets/css/'));
+});
+gulp.task('cdnjs', function(){
+		return gulp.src(['./assets/js/*.js'])
+		.pipe(gulp.dest('../cdn/assets/js/'));
 });
 
 gulp.task('automakecss', function () {
@@ -182,7 +187,7 @@ gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'ma
 
 gulp.task('test', ['testcss', 'testjs']);
 
-gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs']);
+gulp.task('make', ['makecss', 'makejs', 'mincss', 'minjs', 'cdncss', 'cdnjs']);
 
 gulp.task('makewp', ['wpcss', 'wpjs']);
 
