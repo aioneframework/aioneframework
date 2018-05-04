@@ -12,6 +12,19 @@ $(document).ready(function() {
 	  }
 	});
 
+
+	/*****************************************************
+	/*  Aione Toggle
+	/*****************************************************/
+	$( ".aione-toggle" ).click(function(e) {
+		e.preventDefault();
+		var data = $(this).data();
+		var current_text = $(this).text();
+		$(this).toggleClass(data.class);
+		$(this).text(data.text);
+		$(this).data('text',current_text);
+	}); 
+
     /*****************************************************
 	/*  Aione Templates
 	/*****************************************************/
