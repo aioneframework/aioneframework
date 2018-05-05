@@ -1,0 +1,23 @@
+/***************************************
+AIONE SOCIAL ICONS
+***************************************/
+
+.aione-social {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.aione-social > li{
+    display: inline-block;
+}
+.aione-social > li > a{
+    display: block;
+}
+.aione-social > li > a > i{
+
+}
+
+
+.aione-social.vertical > li{
+    display: block;
+}

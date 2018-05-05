@@ -23,7 +23,7 @@ $(document).ready(function() {
 		$(this).toggleClass(data.class);
 		$(this).text(data.text);
 		$(this).data('text',current_text);
-	}); 
+	});
 
     /*****************************************************
 	/*  Aione Templates
