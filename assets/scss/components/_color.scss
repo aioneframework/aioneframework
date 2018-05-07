@@ -376,6 +376,16 @@ $colors: (
       .border-#{$color_name} {
         border-color: $color_value;
       }
+
+      .hover-#{$color_name}:hover {
+        color: $color_value;
+      }
+      .hover-bg-#{$color_name}:hover {
+        background-color: $color_value;
+      }
+      .hoverborder-#{$color_name}:hover {
+        border-color: $color_value;
+      }
     }
     @else if $color_name != "shades" {
       .#{$color_name}.#{$color_type} {
@@ -385,6 +395,16 @@ $colors: (
         background-color: $color_value;
       }
       .border-#{$color_name}.border-#{$color_type} {
+        border-color: $color_value;
+      }
+
+      .hover-#{$color_name}.hover-#{$color_type}:hover {
+        color: $color_value;
+      }
+      .hover-bg-#{$color_name}.hover-bg-#{$color_type}:hover {
+        background-color: $color_value;
+      }
+      .hover-border-#{$color_name}.hover-border-#{$color_type}:hover {
         border-color: $color_value;
       }
     }
@@ -400,6 +420,16 @@ $colors: (
     background-color: $color_value;
   }
   .border-#{$color} {
+    border-color: $color_value;
+  }
+
+  .hover-#{$color}:hover {
+    color: $color_value;
+  }
+  .hover-bg-#{$color}:hover {
+    background-color: $color_value;
+  }
+  .hover-border-#{$color}:hover {
     border-color: $color_value;
   }
 }
