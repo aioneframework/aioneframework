@@ -181,6 +181,16 @@ gulp.task('automakecss', function () {
   gulp.watch('./../public/../scss/**/*.scss', ['makecss']);
 });
 
+gulp.task('testscss', function(){
+    return gulp.src(['../testscss/scss/*.scss'])
+            .pipe(sass())
+            .pipe(cleanCSS({format: 'beautify'}))
+            .pipe(gulp.dest('../testscss/css/'))
+            .pipe(cleanCSS({compatibility: 'ie8'}))
+            .pipe(rename({suffix: '.min'}))
+            .pipe(gulp.dest('../testscss/css/')); 
+});
+
 gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
 
 gulp.task('makejs', ['make-scripts', 'make-vendor-js', 'make-vendorlite-js', 'make-full-js']);
