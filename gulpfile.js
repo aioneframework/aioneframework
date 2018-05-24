@@ -136,7 +136,7 @@ gulp.task('minjs', function() {
 
 gulp.task('makecss', function(){
 		return gulp.src('./assets/scss/*.scss')
-			.pipe(sass()) // Using gulp-sass
+			.pipe(sass({"sourceComments": true}).on('error', sass.logError)) // Using gulp-sass
 			.pipe(cleanCSS({format: 'beautify'}))
     		.pipe(gulp.dest('./assets/css/'))
 			.pipe(cleanCSS({compatibility: 'ie8'}))
@@ -182,13 +182,13 @@ gulp.task('automakecss', function () {
 });
 
 gulp.task('testscss', function(){
-    return gulp.src(['../testscss/scss/*.scss'])
-            .pipe(sass())
+    return gulp.src(['../../demo/testscss/scss/*.scss'])
+            .pipe(sass({"sourceComments": true}).on('error', sass.logError))
             .pipe(cleanCSS({format: 'beautify'}))
-            .pipe(gulp.dest('../testscss/css/'))
+            .pipe(gulp.dest('../../demo/testscss/css/'))
             .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(rename({suffix: '.min'}))
-            .pipe(gulp.dest('../testscss/css/')); 
+            .pipe(gulp.dest('../../demo/testscss/css/')); 
 });
 
 gulp.task('testjs', ['test-scripts', 'test-vendor-js']);
