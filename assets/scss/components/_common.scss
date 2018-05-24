@@ -347,16 +347,38 @@ COMMON
     word-break: break-all;
     word-wrap: break-word;
     text-indent: 0px;
-    color: #eceff1;
-    background-color: transparent;
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
     background-size: 100% 36px;
     border: none;
     border-radius: 0px;
     min-height: 350px;
+    color: #eceff1;
+    background-color: #212121;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
 }
 .aione-code:focus {
+    border: none;
+    background-color: #212121;
     background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
+}
+.aione-code.dark {
+    color: #eceff1;
+    background-color: #212121;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
+}
+.aione-code.dark:focus {
+    color: #eceff1;
+    background-color: #212121;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) );
+}
+.aione-code.light {
+    color:#333333;
+    background-color: #f8f8f8;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) );
+}
+.aione-code.light:focus {
+    color:#333333;
+    background-color: #f8f8f8;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) );
 }
 
 		

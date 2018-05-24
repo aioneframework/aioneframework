@@ -1980,16 +1980,40 @@ img {
   word-break: break-all;
   word-wrap: break-word;
   text-indent: 0;
-  color: #eceff1;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(255,255,255,.05) 50%,rgba(255,255,255,.05));
   background-size: 100% 36px;
   border: none;
   border-radius: 0;
-  min-height: 350px
+  min-height: 350px;
+  color: #eceff1;
+  background-color: #212121;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(255,255,255,.05) 50%,rgba(255,255,255,.05))
 }
 .aione-code:focus {
+  border: none;
+  background-color: #212121;
   background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(255,255,255,.05) 50%,rgba(255,255,255,.05))
+}
+.aione-code.dark {
+  color: #eceff1;
+  background-color: #212121;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(255,255,255,.05) 50%,rgba(255,255,255,.05))
+}
+.aione-code.dark:focus {
+  color: #eceff1;
+  background-color: #212121;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(255,255,255,.05) 50%,rgba(255,255,255,.05))
+}
+.aione-code.light,
+.page-footer .aione-code.footer-copyright {
+  color: #333;
+  background-color: #f8f8f8;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.05) 50%,rgba(0,0,0,.05))
+}
+.aione-code.light:focus,
+.page-footer .aione-code.footer-copyright:focus {
+  color: #333;
+  background-color: #f8f8f8;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.05) 50%,rgba(0,0,0,.05))
 }
 ::-webkit-scrollbar {
   width: 8px;
