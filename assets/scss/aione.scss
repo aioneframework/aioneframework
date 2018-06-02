@@ -1,17 +1,14 @@
 @charset "UTF-8";
 
-
 /********************************
 RESET
 *********************************/
 @import "normalize/reset";
 
-
 /********************************
 OPEN SANS
 *********************************/
 @import "components/open-sans";
-
 
 /********************************
 PLUGINS
@@ -24,7 +21,6 @@ PLUGINS
 @import "../../bower_components/owl.carousel/src/scss/owl.carousel.scss";
 @import "../../bower_components/owl.carousel/src/scss/owl.theme.default.scss";
 
-
 /********************************
 SELECT2
 *********************************/
@@ -32,12 +28,15 @@ SELECT2
 @import "../../bower_components/jquery-prettyPhoto/css/prettyPhoto.css";
 @import "../../bower_components/animate.css/animate.css";
 
+/********************************
+SELECT2
+*********************************/
+@import "../../bower_components/select2/src/scss/core.scss";
 
 /********************************
 VARIABLES AND MIXINS
 *********************************/
 @import "../../bower_components/materialize/sass/components/variables";
-
 
 /********************************
 MATERIALIZE MIXINS
@@ -46,12 +45,10 @@ MATERIALIZE MIXINS
 /*@import "../../bower_components/materialize/sass/components/mixins";*/
 /*@import "../../bower_components/materialize/sass/components/color";*/
 
-
 /********************************
 MATERIALIZE RESET
 *********************************/
 @import "../../bower_components/materialize/sass/components/normalize";
-
 
 /********************************
 MATERIALIZE COMPONENTS
@@ -88,15 +85,8 @@ MATERIALIZE COMPONENTS
 @import "../../bower_components/materialize/sass/components/date_picker/default.time";
 
 
-/********************************
-SELECT2
-*********************************/
-@import "../../bower_components/select2/src/scss/core.scss"; 
-
-
 @import "components/aione-grid";
 @import "components/aione-width";
-
 
 /********************************
 AIONE COMPONANTS
@@ -117,18 +107,15 @@ AIONE COMPONANTS
 @import "components/temp";
 @import "components/elements";
 
-
 /********************************
 SELECT 2 AIONE THEME STYLE OVERIDE
 *********************************/
 @import "components/select2-aione-theme";
 
-
 /********************************
 SPACTRUM COLOR PICKER STYLE OVERIDE
 *********************************/
 @import "components/color-picker-aione-theme";
-
 
 /********************************
 Aione Theme
