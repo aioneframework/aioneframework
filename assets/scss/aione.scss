@@ -1,62 +1,66 @@
 @charset "UTF-8";
 
-// Reset
+
+/********************************
+RESET
+*********************************/
 @import "normalize/reset";
 
-// Open Sans
+
+/********************************
+OPEN SANS
+*********************************/
 @import "components/open-sans";
 
-// Aione Layout
-/********************************
-Aione layout
-*********************************/
-@import "layout/layout";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/page";
-@import "layout/footer";
-@import "layout/aione-content";
-@import "layout/aione-nav";
-@import "layout/aione-page-header";
-@import "layout/rtl";
 
+/********************************
+PLUGINS
+*********************************/
 @import "components/common";
 @import "components/color";
 @import "components/ionicons";
-
-// sweetalert
 @import "../../bower_components/sweetalert/dev/sweetalert";
-//font-awesome
 @import "../../bower_components/font-awesome/scss/font-awesome";
-//owl.carousel
 @import "../../bower_components/owl.carousel/src/scss/owl.carousel.scss";
 @import "../../bower_components/owl.carousel/src/scss/owl.theme.default.scss";
 
-//Select2
+
+/********************************
+SELECT2
+*********************************/
 @import "../../bower_components/select2/dist/css/select2.css";
 @import "../../bower_components/jquery-prettyPhoto/css/prettyPhoto.css";
 @import "../../bower_components/animate.css/animate.css";
 
 
-//TODO
-
-// Materialize Mixins
-//@import "../../bower_components/materialize/sass/components/prefixer";
-//@import "../../bower_components/materialize/sass/components/mixins";
-//@import "../../bower_components/materialize/sass/components/color";
-
-// Materialize Variables;
+/********************************
+VARIABLES AND MIXINS
+*********************************/
 @import "../../bower_components/materialize/sass/components/variables";
 
-// Materialize Reset
+
+/********************************
+MATERIALIZE MIXINS
+*********************************/
+/*@import "../../bower_components/materialize/sass/components/prefixer";*/
+/*@import "../../bower_components/materialize/sass/components/mixins";*/
+/*@import "../../bower_components/materialize/sass/components/color";*/
+
+
+/********************************
+MATERIALIZE RESET
+*********************************/
 @import "../../bower_components/materialize/sass/components/normalize";
 
-// Materialize Components
+
+/********************************
+MATERIALIZE COMPONENTS
+*********************************/
 @import "../../bower_components/materialize/sass/components/global";
 @import "../../bower_components/materialize/sass/components/badges";
 @import "../../bower_components/materialize/sass/components/icons-material-design";
 @import "../../bower_components/materialize/sass/components/grid";
-//@import "../../bower_components/materialize/sass/components/navbar";
+/*@import "../../bower_components/materialize/sass/components/navbar";*/
 @import "../../bower_components/materialize/sass/components/roboto";
 @import "../../bower_components/materialize/sass/components/typography";
 @import "../../bower_components/materialize/sass/components/transitions";
@@ -71,9 +75,9 @@ Aione layout
 @import "../../bower_components/materialize/sass/components/collapsible";
 @import "../../bower_components/materialize/sass/components/chips";
 @import "../../bower_components/materialize/sass/components/materialbox";
-//@import "../../bower_components/materialize/sass/components/forms/forms";
+/*@import "../../bower_components/materialize/sass/components/forms/forms";*/
 @import "../../bower_components/materialize/sass/components/table_of_contents";
-//@import "../../bower_components/materialize/sass/components/sideNav";
+/*@import "../../bower_components/materialize/sass/components/sideNav";*/
 @import "../../bower_components/materialize/sass/components/preloader";
 @import "../../bower_components/materialize/sass/components/slider";
 @import "../../bower_components/materialize/sass/components/carousel";
@@ -84,16 +88,19 @@ Aione layout
 @import "../../bower_components/materialize/sass/components/date_picker/default.time";
 
 
-//Select2
+/********************************
+SELECT2
+*********************************/
 @import "../../bower_components/select2/src/scss/core.scss"; 
-
 
 
 @import "components/aione-grid";
 @import "components/aione-width";
 
 
-//Aione Componants
+/********************************
+AIONE COMPONANTS
+*********************************/
 @import "components/backgrounds";
 @import "components/typography";
 @import "components/transitions";
@@ -111,12 +118,27 @@ Aione layout
 @import "components/elements";
 
 
-
-
-//Select 2 Aione Theme Style Overide
+/********************************
+SELECT 2 AIONE THEME STYLE OVERIDE
+*********************************/
 @import "components/select2-aione-theme";
 
-//Spactrum Color Picker Style Overide
+
+/********************************
+SPACTRUM COLOR PICKER STYLE OVERIDE
+*********************************/
 @import "components/color-picker-aione-theme";
 
 
+/********************************
+Aione Theme
+*********************************/
+@import "layout/layout";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/page";
+@import "layout/footer";
+@import "layout/aione-content";
+@import "layout/aione-nav";
+@import "layout/aione-page-header";
+@import "layout/rtl";
