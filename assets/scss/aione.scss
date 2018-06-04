@@ -6,9 +6,39 @@ RESET
 @import "normalize/reset";
 
 /********************************
+VARIABLES AND MIXINS
+*********************************/
+@import "core/variables";
+
+/********************************
 OPEN SANS
 *********************************/
 @import "components/open-sans";
+
+/********************************
+CORE
+*********************************/
+@import "components/aione-grid";
+@import "components/aione-width";
+
+/********************************
+AIONE COMPONANTS
+*********************************/
+@import "components/aione-buttons";
+@import "components/backgrounds";
+@import "components/typography";
+@import "components/transitions";
+@import "components/model";
+@import "components/aione-forms";
+@import "components/aione-table";
+@import "components/aione-datalist";
+@import "components/aione-datalist-pagination";
+@import "components/aione-tabs";
+@import "components/progressbar";
+@import "components/social";
+@import "components/aione-gallery";
+@import "components/temp";
+@import "components/elements";
 
 /********************************
 PLUGINS
@@ -33,10 +63,6 @@ SELECT2
 *********************************/
 @import "../../bower_components/select2/src/scss/core.scss";
 
-/********************************
-VARIABLES AND MIXINS
-*********************************/
-@import "../../bower_components/materialize/sass/components/variables";
 
 /********************************
 MATERIALIZE MIXINS
@@ -48,64 +74,47 @@ MATERIALIZE MIXINS
 /********************************
 MATERIALIZE RESET
 *********************************/
-@import "../../bower_components/materialize/sass/components/normalize";
+// @import "../../bower_components/materialize/sass/components/normalize";
 
 /********************************
 MATERIALIZE COMPONENTS
 *********************************/
-@import "../../bower_components/materialize/sass/components/global";
-@import "../../bower_components/materialize/sass/components/badges";
-@import "../../bower_components/materialize/sass/components/icons-material-design";
-@import "../../bower_components/materialize/sass/components/grid";
+// @import "../../bower_components/materialize/sass/components/global";
+// @import "../../bower_components/materialize/sass/components/badges";
+// @import "../../bower_components/materialize/sass/components/icons-material-design";
+// @import "../../bower_components/materialize/sass/components/grid";
 /*@import "../../bower_components/materialize/sass/components/navbar";*/
-@import "../../bower_components/materialize/sass/components/roboto";
-@import "../../bower_components/materialize/sass/components/typography";
-@import "../../bower_components/materialize/sass/components/transitions";
-@import "../../bower_components/materialize/sass/components/cards";
-@import "../../bower_components/materialize/sass/components/toast";
-@import "../../bower_components/materialize/sass/components/tabs";
-@import "../../bower_components/materialize/sass/components/tooltip";
-@import "../../bower_components/materialize/sass/components/buttons";
-@import "../../bower_components/materialize/sass/components/dropdown";
-@import "../../bower_components/materialize/sass/components/waves";
-@import "../../bower_components/materialize/sass/components/modal";
-@import "../../bower_components/materialize/sass/components/collapsible";
-@import "../../bower_components/materialize/sass/components/chips";
-@import "../../bower_components/materialize/sass/components/materialbox";
+// @import "../../bower_components/materialize/sass/components/roboto";
+// @import "../../bower_components/materialize/sass/components/typography";
+// @import "../../bower_components/materialize/sass/components/transitions";
+// @import "../../bower_components/materialize/sass/components/cards";
+// @import "../../bower_components/materialize/sass/components/toast";
+// @import "../../bower_components/materialize/sass/components/tabs";
+// @import "../../bower_components/materialize/sass/components/tooltip";
+// @import "../../bower_components/materialize/sass/components/buttons";
+// @import "../../bower_components/materialize/sass/components/dropdown";
+// @import "../../bower_components/materialize/sass/components/waves";
+// @import "../../bower_components/materialize/sass/components/modal";
+// @import "../../bower_components/materialize/sass/components/collapsible";
+// @import "../../bower_components/materialize/sass/components/chips";
+// @import "../../bower_components/materialize/sass/components/materialbox";
 /*@import "../../bower_components/materialize/sass/components/forms/forms";*/
-@import "../../bower_components/materialize/sass/components/table_of_contents";
+// @import "../../bower_components/materialize/sass/components/table_of_contents";
 /*@import "../../bower_components/materialize/sass/components/sideNav";*/
-@import "../../bower_components/materialize/sass/components/preloader";
-@import "../../bower_components/materialize/sass/components/slider";
-@import "../../bower_components/materialize/sass/components/carousel";
-@import "../../bower_components/materialize/sass/components/tapTarget";
-@import "../../bower_components/materialize/sass/components/pulse";
-@import "../../bower_components/materialize/sass/components/date_picker/default";
-@import "../../bower_components/materialize/sass/components/date_picker/default.date";
-@import "../../bower_components/materialize/sass/components/date_picker/default.time";
+// @import "../../bower_components/materialize/sass/components/preloader";
+// @import "../../bower_components/materialize/sass/components/slider";
+// @import "../../bower_components/materialize/sass/components/carousel";
+// @import "../../bower_components/materialize/sass/components/tapTarget";
+// @import "../../bower_components/materialize/sass/components/pulse";
+// @import "../../bower_components/materialize/sass/components/date_picker/default";
+// @import "../../bower_components/materialize/sass/components/date_picker/default.date";
+// @import "../../bower_components/materialize/sass/components/date_picker/default.time";
 
 
-@import "components/aione-grid";
-@import "components/aione-width";
 
-/********************************
-AIONE COMPONANTS
-*********************************/
-@import "components/backgrounds";
-@import "components/typography";
-@import "components/transitions";
-@import "components/model";
-@import "components/aione-buttons";
-@import "components/aione-forms";
-@import "components/aione-table";
-@import "components/aione-datalist";
-@import "components/aione-datalist-pagination";
-@import "components/aione-tabs";
-@import "components/progressbar";
-@import "components/social";
-@import "components/aione-gallery";
-@import "components/temp";
-@import "components/elements";
+
+
+
 
 /********************************
 SELECT 2 AIONE THEME STYLE OVERIDE

@@ -41,54 +41,6 @@ PAGE HEADER
 .aione-page-header .aione-page-title-container .aione-button:hover{
 
 }
-.aione-button{
-	color: #757575;
-	display: inline-block;
-	padding: 0 10px;
-	margin: 0 0 0 10px;
-	background-color: #f8f8f8;
-	border: 1px solid #e8e8e8;
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 400;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
-	text-align:center;
-	cursor: pointer;
-	webkit-transition: all 150ms ease-out;
-	-moz-transition: all 150ms ease-out;
-	-o-transition: all 150ms ease-out;
-	transition: all 150ms ease-out;
-}
-.aione-button:hover{
-	color: #666666;
-	background-color: #f2f2f2;
-	border: 1px solid #d2d2d2;
-}
-.aione-button-small{
-	padding:8px 20px 8px 20px;
-        line-height: 22px;
-
-}
-.aione-button-medium{
-	
-}
-.aione-button-large{
-	padding:18px 40px 18px 40px;
-}
-.aione-button-light{
-	
-}
-.aione-button.fullwidth{
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-.aione-button-square{
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
-	border-radius:0px;
-}
 
 .aione-breadcrumbs-container{
 	display: inline-block;
