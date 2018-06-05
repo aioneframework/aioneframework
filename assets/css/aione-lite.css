@@ -1864,11 +1864,11 @@ img {
   -webkit-border-radius: 50%;
   border-radius: 50%
 }
+.aione-clear,
 .clear {
-  clear: both
-}
-.display_block {
-  display: block!important
+  clear: both;
+  width: 100%;
+  display: table
 }
 .display-block {
   display: block
@@ -1980,7 +1980,7 @@ img {
   background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.05) 50%,rgba(0,0,0,.05))
 }
 .scrolltop {
-  opacity: 1;
+  opacity: 0;
   margin: 0;
   padding: 0;
   right: 2%;

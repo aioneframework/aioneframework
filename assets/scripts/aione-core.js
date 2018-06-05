@@ -544,6 +544,15 @@ $(document).ready(function() {
 			$('.scrolltop').removeClass('active');
 		}
     });
+
+    $(window).scroll(function() {
+		var scroltop = $(this).scrollTop();
+		if (scroltop > 100) {
+			$('.aione-header').addClass('sticky');
+		} else {
+			$('.aione-header').removeClass('sticky');
+		}
+    });
 	    
 	
 	

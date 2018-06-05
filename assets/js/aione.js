@@ -528,6 +528,33 @@ $(document).ready(function() {
 	}catch(e){
 
 	}
+
+	/*****************************************************
+	/*  Scroll to top
+	/*****************************************************/
+
+
+	  
+
+    $(window).scroll(function() {
+		var scroltop = $(this).scrollTop();
+		if (scroltop > 100) {
+			$('.scrolltop').addClass('active');
+		} else {
+			$('.scrolltop').removeClass('active');
+		}
+    });
+
+    $(window).scroll(function() {
+		var scroltop = $(this).scrollTop();
+		if (scroltop > 100) {
+			$('.aione-header').addClass('sticky');
+		} else {
+			$('.aione-header').removeClass('sticky');
+		}
+    });
+	    
+	
 	
 
 	/*****************************************************
