@@ -10786,27 +10786,38 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Scroll to top
 	/*****************************************************/
+	try{
+	    $(window).scroll(function() {
+			var scroltop = $(this).scrollTop();
+			if (scroltop > 100) {
+				$('.scrolltop').addClass('active');
+			} else {
+				$('.scrolltop').removeClass('active');
+			}
+	    });
+    }catch(e){
 
+	}
+	/*****************************************************
+	/*  Sticky Header
+	/*****************************************************/
+	try{
+		var sticky = $('.aione-header.sticky');
+		var offset = sticky.offset().top;
+	    $(window).scroll(function() {
+			var scrolltop = $(this).scrollTop();
 
-	  
+			console.log('scrolltop = '+scrolltop);
+			console.log('offset = '+offset);
+			if (scrolltop >= offset) {
+				sticky.addClass('fixed');
+			} else {
+				sticky.removeClass('fixed');
+			}
+	    });
+    }catch(e){
 
-    $(window).scroll(function() {
-		var scroltop = $(this).scrollTop();
-		if (scroltop > 100) {
-			$('.scrolltop').addClass('active');
-		} else {
-			$('.scrolltop').removeClass('active');
-		}
-    });
-
-    $(window).scroll(function() {
-		var scroltop = $(this).scrollTop();
-		if (scroltop > 100) {
-			$('.aione-header').addClass('sticky');
-		} else {
-			$('.aione-header').removeClass('sticky');
-		}
-    });
+	}
 	    
 	
 	

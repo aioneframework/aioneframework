@@ -261,7 +261,7 @@ COMMON
 
 .clear,
 .aione-clear{
-	clear:both;
+    clear:both;
     width: 100%;
     display: table;
 }
@@ -386,26 +386,45 @@ COMMON
     opacity:0;
     margin: 0;
     padding: 0;
-    right: 2%;
+    right: 1.5%;
     bottom: 0;
     width: 40px;
-    height: 40px;
+    height: 30px;
     position: fixed;
     text-align: center;
     display: inline-block;
     background-color: #1685c2;
-    -webkit-transition: all .400ms ease-in-out;
-    -moz-transition: all .400ms ease-in-out;
-    transition: all .400ms ease-in-out;
     border-radius: 5px 5px 0 0;
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+}
+.scrolltop:hover{
+    background-color: #1570a6;
+
 }
 .scrolltop:before{
     content:'';
+    top: 14px;
+    left: 13px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    display: inline-block;
+    border-top:1px solid #FFFFFF;
+    border-right:1px solid #FFFFFF;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
 }
 .scrolltop.active{
     opacity:1;
 }
-		
+        
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px
@@ -418,5 +437,5 @@ COMMON
     -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #888888; 
+    background: #888888; 
 }
