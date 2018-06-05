@@ -16,6 +16,19 @@ OPEN SANS
 @import "components/open-sans";
 
 /********************************
+Aione Theme
+*********************************/
+@import "layout/layout";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/page";
+@import "layout/footer";
+@import "layout/aione-content";
+@import "layout/aione-nav";
+@import "layout/aione-page-header";
+@import "layout/rtl";
+
+/********************************
 CORE
 *********************************/
 @import "components/aione-grid";
@@ -126,15 +139,3 @@ SPACTRUM COLOR PICKER STYLE OVERIDE
 *********************************/
 @import "components/color-picker-aione-theme";
 
-/********************************
-Aione Theme
-*********************************/
-@import "layout/layout";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/page";
-@import "layout/footer";
-@import "layout/aione-content";
-@import "layout/aione-nav";
-@import "layout/aione-page-header";
-@import "layout/rtl";

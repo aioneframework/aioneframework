@@ -381,6 +381,29 @@ COMMON
     background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) );
 }
 
+.scrolltop{
+    opacity:1;
+    margin: 0;
+    padding: 0;
+    right: 2%;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    text-align: center;
+    display: inline-block;
+    background-color: #1685c2;
+    -webkit-transition: all .400ms ease-in-out;
+    -moz-transition: all .400ms ease-in-out;
+    transition: all .400ms ease-in-out;
+    border-radius: 5px 5px 0 0;
+}
+.scrolltop:before{
+    content:'';
+}
+.scrolltop.active{
+    opacity:1;
+}
 		
 ::-webkit-scrollbar {
     width: 8px;

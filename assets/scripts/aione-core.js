@@ -528,6 +528,24 @@ $(document).ready(function() {
 	}catch(e){
 
 	}
+
+	/*****************************************************
+	/*  Scroll to top
+	/*****************************************************/
+
+
+	  
+
+    $(window).scroll(function() {
+		var scroltop = $(this).scrollTop();
+		if (scroltop > 100) {
+			$('.scrolltop').addClass('active');
+		} else {
+			$('.scrolltop').removeClass('active');
+		}
+    });
+	    
+	
 	
 
 	/*****************************************************
