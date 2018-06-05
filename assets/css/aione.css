@@ -4868,9 +4868,6 @@ th {
   width: 100%;
   clear: both
 }
-.aione-main {
-  padding-top: 40px
-}
 .aione-wrapper.no-header .aione-main {
   padding-top: 0
 }
@@ -5144,7 +5141,6 @@ th {
   float: none
 }
 .aione-page-content {
-  margin: 10px 10px 20px 0;
   min-height: 400px
 }
 .aione-wrapper.no-sidebar .aione-main .aione-content {
@@ -5152,7 +5148,6 @@ th {
   float: none
 }
 .page-content {
-  padding-top: 46px;
   padding-right: 0;
   padding-left: 230px!important
 }
@@ -5255,11 +5250,6 @@ th {
   bottom: 0;
   width: 100%;
   z-index: 102
-}
-.page-content {
-  padding-top: 46px;
-  padding-right: 0;
-  padding-left: 230px!important
 }
 .aione-nav {
   color: #454545;
