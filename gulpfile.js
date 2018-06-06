@@ -10,6 +10,12 @@ let cleanCSS 	= require('gulp-clean-css');
 //var webshot		= require('gulp-webshot');
 var webshot =       require('webshot');
 
+
+var postcss      = require('gulp-postcss');
+var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+
+
 /*gulp.task('inject', function(){
 	var target = gulp.src('index.html');
 	var sources = gulp.src(['../assets/js/*.js'], {read: false});
@@ -137,6 +143,7 @@ gulp.task('minjs', function() {
 gulp.task('makecss', function(){
 		return gulp.src('./assets/scss/*.scss')
 			.pipe(sass({"sourceComments": true}).on('error', sass.logError)) // Using gulp-sass
+			.pipe(postcss([ autoprefixer() ]))
 			.pipe(cleanCSS({format: 'beautify'}))
     		.pipe(gulp.dest('./assets/css/'))
 			.pipe(cleanCSS({compatibility: 'ie8'}))
