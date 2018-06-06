@@ -143,7 +143,7 @@ gulp.task('minjs', function() {
 gulp.task('makecss', function(){
 		return gulp.src('./assets/scss/*.scss')
 			.pipe(sass({"sourceComments": true}).on('error', sass.logError)) // Using gulp-sass
-			.pipe(postcss([ autoprefixer() ]))
+			//.pipe(postcss([ autoprefixer() ]))
 			.pipe(cleanCSS({format: 'beautify'}))
     		.pipe(gulp.dest('./assets/css/'))
 			.pipe(cleanCSS({compatibility: 'ie8'}))
