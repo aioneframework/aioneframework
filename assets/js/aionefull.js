@@ -10273,12 +10273,6 @@ $(document).on('mouseover', '.aione-tabs.hover > .nav > *', function(e) {
 
 
 
-
-
-
-
-
-
 $(document).ready(function() {
 
 	
