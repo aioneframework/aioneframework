@@ -1,10 +1,76 @@
+/*****************************************************
+/*  Aione tabs
+/*****************************************************/
+$(document).on('click', '.aione-tabs > .nav > *', function(e) {
+	e.preventDefault();
+	$(this).addClass("active").siblings().removeClass('active');
+	var target = $(this).attr("data-target");
+	if (target != undefined) {
+		$(target).addClass("active").siblings().removeClass('active');
+	}
+});
+
+$(document).on('mouseover', '.aione-tabs.hover > .nav > *', function(e) {
+	e.preventDefault();
+	$(this).trigger("click");
+});
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
+
+	
+
+
+	/*****************************************************
+	/*  Aione Toggle
+	/*****************************************************/
+	$( ".aione-toggle" ).click(function(e) {
+		e.preventDefault();
+		var data = $(this).data();
+		var current_text = $(this).text();
+		$(this).toggleClass(data.class);
+		$(this).text(data.text);
+		$(this).data('text',current_text);
+	});
+
+    /*****************************************************
+	/*  Aione Templates
+	/*****************************************************/
+	try{
+		$(".load-template").each(function() {
+			var template_file = $(this).attr("data-src");
+			if(template_file != undefined){
+				$(this).load(teplate_file);
+			} else {
+				var template_file = $(this).attr("id");
+				if(template_file != undefined){
+					$(this).load('template/'+template_file+'.html');
+				}
+			}
+	    });
+	}catch(e){
+
+	}
 
 	/*****************************************************
 	/*  Aione Slider
 	/*****************************************************/
 	try{
-		$(".aione-slider").owlCarousel({
+        var DataJson = $('.slider').data();
+        console.log("Slider Json Data");
+        console.log(DataJson);
+        //$(".aione-slider").owlCarousel(DataJson);
+        
+		$(".slider").owlCarousel({
 			
 		    items:1,
 		    loop:true,
@@ -17,6 +83,8 @@ $(document).ready(function() {
     		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
+		
+		
 	}catch(e){
 
 	}
@@ -50,12 +118,20 @@ $(document).ready(function() {
 	try{
 		var clipboard = new Clipboard('.clipboard');
 		clipboard.on('success', function(e) {
+    		console.info('Action:', e.action);
+    		console.info('Trigger:', e.trigger);
 		    console.log("Copied '" + e.text + "' to clipboard");
 		    e.clearSelection();
 		});
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+		});
 	}catch(e){
-
+		console.log("Filed to copy to clipboard");
 	}
+
+
 
 	/*****************************************************
 	/*  wow ja animate on scroll
@@ -73,8 +149,49 @@ $(document).ready(function() {
 
 	}
 
-	
+	/*****************************************************
+	/*  Animate on Hover 
+	/*****************************************************/
 
+	$(".animate-hover").hover(
+		function(){ $(this).addClass( "animated infinite" ); }, 
+		function(){ $(this).delay(200).removeClass( "animated infinite" );
+	});
+
+	/*****************************************************
+	/*  Aione Search
+	/*****************************************************/
+
+	var aione_search_ids = new Array();
+	$(".aione-search").each(function() {
+		var aione_search_id = $(this).attr("id");
+		if(aione_search_id != undefined){
+			aione_search_ids.push(aione_search_id);
+		} else {
+			var aione_search_id = 'search_id_'+Math.floor(Math.random()*100000000);
+			$(this).attr("id", aione_search_id);
+			aione_search_ids.push(aione_search_id);
+		}
+    });
+
+    $.each(aione_search_ids, function( index, aione_search ) {
+    	var searchable = $('#'+aione_search).find('.aione-search-input').attr('data-search');
+    	if(searchable == undefined || searchable == ""){
+			var search_items = ['aione-search-item'];
+		} else {
+			var search_items = searchable.split(' ');
+		}
+		console.log("=======");
+		console.log(search_items);
+
+    	var options = {
+			valueNames: search_items,
+			searchClass: 'aione-search-input',
+			sortClass: 'aione-sort-button',
+			listClass: 'aione-search-list'
+		};
+		var search = new List(aione_search, options);
+    });
 
 	/*****************************************************
 	/*  Aione Collapsible
@@ -93,6 +210,20 @@ $(document).ready(function() {
 	})
 
 	/*****************************************************
+	/*  Aione Collapsible
+	/*****************************************************/
+
+	$('.aione-more-toggle').click(function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+		if($(this).parent().hasClass('active')){
+			$(this).html('Show Less');
+		} else {
+			$(this).html('Show More');
+		} 
+	});
+
+	/*****************************************************
 	/*  Hide Form Fields with conditions
 	/*****************************************************/
 	$('.field-wrapper').each(function(e){
@@ -105,72 +236,76 @@ $(document).ready(function() {
 	/*****************************************************
 	/*  Show Form Fields when conditions are true
 	/*****************************************************/
-	$('.aione-form-wrapper').click(function(e){
-		var conditions = JSON.parse($(this).find('.form_conditions').val());
-		var form_id = $(this).attr('id');
-		$('#'+form_id+' .field-wrapper').each(function(ev){
-			
-			if($(this).attr('data-conditions') == 1){
-				var field_id = $(this).attr('id').replace("field_","");
-				var field_type = $(this).attr('data-field-type');
-				var field_conditions = conditions[field_id]['field_conditions'];
+	try{
+		$('.aione-form-wrapper').click(function(e){
+			var conditions = JSON.parse($(this).find('.form_conditions').val());
+			var form_id = $(this).attr('id');
+			$('#'+form_id+' .field-wrapper').each(function(ev){
+				
+				if($(this).attr('data-conditions') == 1){
+					var field_id = $(this).attr('id').replace("field_","");
+					var field_type = $(this).attr('data-field-type');
+					var field_conditions = conditions[field_id]['field_conditions'];
 
-				var show = [];
+					var show = [];
 
-				$(field_conditions).each(function(index, value){
-					var field_elem = $('#field_'+value.condition_column);
+					$(field_conditions).each(function(index, value){
+						var field_elem = $('#field_'+value.condition_column);
 
-					switch(field_elem.attr('data-field-type')){
-						case'checkbox':
-						case'switch':
-							if(field_elem.find('input').is(':checked')){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+						switch(field_elem.attr('data-field-type')){
+							case'checkbox':
+							case'switch':
+								if(field_elem.find('input').is(':checked')){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
 
-						case'text':
-							var condition = '"'+field_elem.find('input').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
-						case'radio':
-							var condition = '"'+field_elem.find('input:checked').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+							case'text':
+								var condition = '"'+field_elem.find('input').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
+							case'radio':
+								var condition = '"'+field_elem.find('input:checked').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
 
-						case'select':
-							var condition = '"'+field_elem.find('select').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
-							//console.log(condition);
-							if(eval(condition)){
-								show.push('true');
-							}else{
-								show.push('false');
-							}
-						break;
+							case'select':
+								var condition = '"'+field_elem.find('select').val()+'" '+value.condition_operator+' "'+value.condition_value+'"';
+								//console.log(condition);
+								if(eval(condition)){
+									show.push('true');
+								}else{
+									show.push('false');
+								}
+							break;
+						}
+					});
+					if($.inArray('false',show) !== -1){
+						$(this).hide();
+					}else{
+						$(this).show();
 					}
-				});
-				if($.inArray('false',show) !== -1){
-					$(this).hide();
-				}else{
-					$(this).show();
+
+					/*console.log("=== FIELD Conditions");
+					console.log(field_conditions);
+					console.log("===================");*/
+
 				}
-
-				/*console.log("=== FIELD Conditions");
-				console.log(field_conditions);
-				console.log("===================");*/
-
-			}
+			});
 		});
-	});
+	}catch(e){
+
+	}
 
 	/*****************************************************
 	/*  On Start Show Form Fields where conditions are true
@@ -258,16 +393,6 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 	});
 
-	/*****************************************************
-	/*  Aione tabs
-	/*****************************************************/
-
-	$('.aione-tabs-wrapper .aione-tabs > .aione-tab > a').click(function(e){
-		e.preventDefault();
-		$(this).parent().addClass('active').siblings().removeClass('active');
-		var selected_tab = $(this).attr('href');
-		$(selected_tab).addClass('active').siblings().removeClass('active');
-	})
 
 	/*****************************************************
 	/*  Aione FORM Section Accordion
@@ -420,6 +545,44 @@ $(document).ready(function() {
 	}catch(e){
 
 	}
+
+	/*****************************************************
+	/*  Scroll to top
+	/*****************************************************/
+	try{
+	    $(window).scroll(function() {
+			var scroltop = $(this).scrollTop();
+			if (scroltop > 100) {
+				$('.scrolltop').addClass('active');
+			} else {
+				$('.scrolltop').removeClass('active');
+			}
+	    });
+    }catch(e){
+
+	}
+	/*****************************************************
+	/*  Sticky Header
+	/*****************************************************/
+	try{
+		var sticky = $('.aione-header.sticky');
+		var offset = sticky.offset().top;
+	    $(window).scroll(function() {
+			var scrolltop = $(this).scrollTop();
+
+			console.log('scrolltop = '+scrolltop);
+			console.log('offset = '+offset);
+			if (scrolltop >= offset) {
+				sticky.addClass('fixed');
+			} else {
+				sticky.removeClass('fixed');
+			}
+	    });
+    }catch(e){
+
+	}
+	    
+	
 	
 
 	/*****************************************************
@@ -487,6 +650,47 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parent().parent().toggleClass('fullscreen');
 	});
+
+	/*****************************************************
+	/*  Smooth Scroll
+	/*****************************************************/
+
+	// Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+	    // On-page links
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	      && 
+	      location.hostname == this.hostname
+	    ) {
+	      // Figure out element to scroll to
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	      // Does a scroll target exist?
+	      if (target.length) {
+	        // Only prevent default if animation is actually gonna happen
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000, function() {
+	          // Callback after animation
+	          // Must change focus!
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { // Checking if the target was focused
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+	            $target.focus(); // Set focus again
+	          };
+	        });
+	      }
+	    }
+	  });
 
 
 	/*****************************************************
