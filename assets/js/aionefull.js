@@ -10269,4 +10269,28 @@ $(document).on('mouseover', '.aione-tabs.hover > .nav > *', function(e) {
 	$(this).trigger("click");
 });
 
+$(document).ready(function() {
+	$('.equal').equal();
+});
+
+$(window).resize(function(){
+	$('.equal').equal();
+});
+
+
+
+$.fn.equal = function(){
+	this.each(function(){
+		var maxHeight = 0;
+		var $columns = $(this).children();
+		$columns.each( function() {
+		    if($(this).height() > maxHeight){
+		    	maxHeight = $(this).height();
+		    }
+		});
+		$columns.each( function() {
+	    	$(this).height(maxHeight);
+		});
+	});
+};
 
