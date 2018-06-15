@@ -15,16 +15,6 @@ $(document).on('mouseover', '.aione-tabs.hover > .nav > *', function(e) {
 	$(this).trigger("click");
 });
 
-$(document).ready(function() {
-	$('.equal').equal();
-});
-
-$(window).resize(function(){
-	$('.equal').equal();
-});
-
-
-
 $.fn.equal = function(){
 	this.each(function(){
 		var maxHeight = 0;
@@ -35,8 +25,16 @@ $.fn.equal = function(){
 		    }
 		});
 		$columns.each( function() {
-	    	$(this).height(maxHeight);
+	    	$(this).css('min-height',maxHeight);
 		});
 	});
 };
+
+$(document).ready(function() {
+	$('.equal').equal();
+});
+
+$(window).resize(function(){
+	$('.equal').equal();
+});
 
