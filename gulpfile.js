@@ -63,7 +63,8 @@ var vendors_lite = [
 var scripts = [
 		'assets/scripts/aione-core.js',
 		'assets/scripts/aione-forms.js',
-		'assets/scripts/aione-layout.js'
+		'assets/scripts/aione-layout.js',
+		'assets/scripts/aione-components.js'
 		];
 var scripts_full = [
 		'bower_components/jquery/dist/jquery.js',
