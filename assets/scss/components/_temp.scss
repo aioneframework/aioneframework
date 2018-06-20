@@ -215,3 +215,126 @@ TO BE CHANGED
     background-color: transparent;
 }
 	
+
+
+/********************************
+Owl Theme OXO
+*********************************/
+
+.slider.oxo{
+
+}
+.slider.oxo .slider-item{
+    
+}
+.slider.oxo .slider-item:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.slider.oxo .slider-item .slider-image{
+    float:left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.slider.oxo .slider-item .slider-image img{
+    max-width: 100%;
+}
+.slider.oxo .slider-item .slider-caption{
+    float:left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    background-color: #01b7f2;
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+
+}
+.slider.oxo .slider-item:hover .slider-caption{
+    /*
+    .background-color: #0090bf;
+    */
+}
+
+.slider.oxo .slider-item .slider-caption .caption-title{ 
+    color: #ffffff;
+    margin-top:0;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+.slider.oxo .slider-item .slider-caption .caption-description{ 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.slider.oxo .slider-item .slider-caption .aione-button{ 
+    color: #ffffff;
+    position: absolute;
+    top:40px;
+    right:60px;
+    border:2px solid #FFFFFF;
+    background: transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+
+}
+
+.slider.oxo .owl-nav .owl-prev,
+.slider.oxo .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 60px;
+    width: 50px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    color: rgba(255,255,255,.6);
+    background: rgba(0,0,0,.6);
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+.slider.oxo .owl-nav .owl-next:hover,
+.slider.oxo .owl-nav .owl-prev:hover{
+  color: #ffffff;
+  background: #168dc5;
+}
+.slider.oxo .owl-nav .owl-prev{
+    left:0;
+}
+.slider.oxo .owl-nav .owl-next{
+    right:0;
+}
+.slider.oxo .owl-nav .owl-prev:before,
+.slider.oxo .owl-nav .owl-next:before{
+    content:"";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 1px;
+    display: inline-block;
+    border-top:2px solid #ffffff;
+}
+
+.slider.oxo .owl-nav .owl-prev:before{
+    border-left:2px solid #ffffff;
+    transform: rotate(-45deg);
+    left: 15px;
+}
+.slider.oxo .owl-nav .owl-next:before{
+    border-right:2px solid #ffffff;
+    transform: rotate(45deg);
+}
