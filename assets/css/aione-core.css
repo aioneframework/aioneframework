@@ -41994,17 +41994,19 @@ input[type=file]:hover {
   margin-bottom: 10px
 }
 .aione-social-icons > * {
-  display: inline-block;
-  cursor: pointer;
+  width: 36px;
   padding: 0;
-  text-decoration: none;
-  text-align: center;
   color: #fff;
   font-size: 20px;
-  width: 40px;
-  line-height: 40px;
+  line-height: 36px;
   margin-right: 5px;
-  font-weight: 400
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none
+}
+.aione-social-icons.labels > * > a {
+  padding: 0 20px
 }
 .aione-social-icons > * > a {
   display: block
@@ -42019,7 +42021,9 @@ input[type=file]:hover {
   display: inline-block
 }
 .aione-social-icons.vertical > * {
-  display: block
+  display: block;
+  margin-right: 0;
+  margin-bottom: 5px
 }
 .aione-social-icons.small > * {
   font-size: 24px;

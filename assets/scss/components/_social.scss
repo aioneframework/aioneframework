@@ -9,17 +9,19 @@ AIONE SOCIAL ICONS
     margin-bottom:10px;
 }
 .aione-social-icons > * {
-    display: inline-block;
-    cursor: pointer;
+    width: 36px;
     padding: 0px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
-    width: 40px;
-    line-height: 40px;
+    line-height: 36px;
     margin-right:5px;
+    text-align: center;
     font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+}
+.aione-social-icons.labels > * > a{
+    padding:0 20px;
 }
 .aione-social-icons > * > a{
     display: block;
@@ -35,6 +37,8 @@ AIONE SOCIAL ICONS
 }
 .aione-social-icons.vertical > *{
     display: block;
+    margin-right:0;
+    margin-bottom:5px;
 }
 .aione-social-icons.small > *{
     font-size: 24px;
