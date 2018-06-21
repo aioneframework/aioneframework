@@ -152,8 +152,70 @@ TO BE CHANGED
     position: relative;
 }
 
+.slider .owl-nav .owl-prev,
+.slider .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 60px;
+    width: 50px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    color: rgba(255,255,255,.6);
+    background: rgba(0,0,0,.6);
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+.slider .owl-nav .owl-next:hover,
+.slider .owl-nav .owl-prev:hover{
+  color: #ffffff;
+  background: #168dc5;
+}
+.slider .owl-nav .owl-prev{
+    left:0;
+}
+.slider .owl-nav .owl-next{
+    right:0;
+}
+.slider .owl-nav .owl-prev:before,
+.slider .owl-nav .owl-next:before{
+    content:"";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 1px;
+    display: inline-block;
+    border-top:2px solid #ffffff;
+}
+
+.slider .owl-nav .owl-prev:before{
+    border-left:2px solid #ffffff;
+    transform: rotate(-45deg);
+    left: 15px;
+}
+.slider .owl-nav .owl-next:before{
+    border-right:2px solid #ffffff;
+    transform: rotate(45deg);
+}
 
 
+/********************************
+Owl Theme Darlic
+*********************************/
+
+
+/********************************
+Owl Theme Aione
+*********************************/
 
 
 
