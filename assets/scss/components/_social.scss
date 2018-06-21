@@ -8,12 +8,6 @@ AIONE SOCIAL ICONS
     text-align: center;
     margin-bottom:10px;
 }
-.aione-social-icons .label {
-    display: none;
-}
-.aione-social-icons.labels .label {
-    display: inline-block;
-}
 .aione-social-icons > * {
     display: inline-block;
     cursor: pointer;
@@ -29,15 +23,15 @@ AIONE SOCIAL ICONS
 }
 .aione-social-icons > * > a{
     display: block;
-    line-height: 36px;
 }
 .aione-social-icons > * > a .icon{
     display: inline-block;
-    line-height: 36px;
 }
 .aione-social-icons > * > a .label{
+    display:none;
+}
+.aione-social-icons.labels > * > a .label{
     display: inline-block;
-    line-height: 36px;
 }
 .aione-social-icons.vertical > *{
     display: block;
@@ -85,6 +79,12 @@ AIONE SOCIAL ICONS
 .aione-social-icons.xlarge > * > a > .icon:before,
 .aione-social-icons.xlarge > * > a > .label{
     line-height: 64px;
+}
+.aione-social-icons.small.labels > *,
+.aione-social-icons.medium.labels > *,
+.aione-social-icons.large.labels > *,
+.aione-social-icons.xlarge.labels > *{
+    width:auto;
 }
 .aione-social-icons.square > *{
     -moz-border-radius: 0px;

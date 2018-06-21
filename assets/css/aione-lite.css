@@ -41993,12 +41993,6 @@ input[type=file]:hover {
   text-align: center;
   margin-bottom: 10px
 }
-.aione-social-icons .label {
-  display: none
-}
-.aione-social-icons.labels .label {
-  display: inline-block
-}
 .aione-social-icons > * {
   display: inline-block;
   cursor: pointer;
@@ -42013,16 +42007,16 @@ input[type=file]:hover {
   font-weight: 400
 }
 .aione-social-icons > * > a {
-  display: block;
-  line-height: 36px
+  display: block
 }
 .aione-social-icons > * > a .icon {
-  display: inline-block;
-  line-height: 36px
+  display: inline-block
 }
 .aione-social-icons > * > a .label {
-  display: inline-block;
-  line-height: 36px
+  display: none
+}
+.aione-social-icons.labels > * > a .label {
+  display: inline-block
 }
 .aione-social-icons.vertical > * {
   display: block
@@ -42070,6 +42064,12 @@ input[type=file]:hover {
 .aione-social-icons.xlarge > * > a > .icon:before,
 .aione-social-icons.xlarge > * > a > .label {
   line-height: 64px
+}
+.aione-social-icons.large.labels > *,
+.aione-social-icons.medium.labels > *,
+.aione-social-icons.small.labels > *,
+.aione-social-icons.xlarge.labels > * {
+  width: auto
 }
 .aione-social-icons.square > * {
   -moz-border-radius: 0;
