@@ -14,7 +14,14 @@ $(function(){
         $(".slider").each(function() {
             var aione_slider_id = $(this).attr("id");
             if(aione_slider_id != undefined){
-                aione_slider_ids.push(aione_slider_id);
+                if(aione_slider_ids.indexOf(aione_slider_id) != -1) {
+                    //Slider with same ID already exists
+                    aione_slider_id = aione_slider_id+'_'+Math.floor(Math.random()*100000000);
+                    $(this).attr("id", aione_slider_id);
+                    aione_slider_ids.push(aione_slider_id);
+                } else{
+                    aione_slider_ids.push(aione_slider_id);
+                }
             } else {
                 var aione_slider_id = 'slider_id_'+Math.floor(Math.random()*100000000);
                 $(this).attr("id", aione_slider_id);

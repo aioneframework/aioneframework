@@ -144,7 +144,29 @@ TO BE CHANGED
 
 
 
-.aione-theme .owl-dots .owl-dot span {
+
+.slider{
+
+}
+.slider .slider-item{
+    position: relative;
+}
+
+
+
+
+
+
+.slider.aione .owl-dots {
+    text-align: center;
+}
+.slider.aione .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+}
+
+
+.slider.aione .owl-dots .owl-dot span {
     width: 15px;
     height: 15px;
     margin: 0 4px;
@@ -154,22 +176,23 @@ TO BE CHANGED
     border-radius: 0;
     border: 1px solid #666666;
     opacity:1;
+    display: block;
     -moz-transition:all 100ms ease-in-out;
     -webkit-transition:all 100ms ease-in-out;
     transition:all 100ms ease-in-out;
 }
-.aione-theme .owl-dots .owl-dot:hover span{
+.slider.aione .owl-dots .owl-dot:hover span{
     background-color: #666666;
 }
-.aione-theme .owl-dots .owl-dot.active span{
+.slider.aione .owl-dots .owl-dot.active span{
     background:#168dc5;
     border-color:#168dc5;
 }
-.aione-theme .owl-nav{
+.slider.aione .owl-nav{
 
 }
-.aione-theme .owl-nav .owl-prev,
-.aione-theme .owl-nav .owl-next{
+.slider.aione .owl-nav .owl-prev,
+.slider.aione .owl-nav .owl-next{
     position: absolute;
     top: 50%;
     margin: -30px 0 0 0;
@@ -188,31 +211,66 @@ TO BE CHANGED
     -webkit-transition:all 100ms ease-in-out;
     transition:all 100ms ease-in-out;
 }
-.aione-theme:hover .owl-nav .owl-prev,
-.aione-theme:hover .owl-nav .owl-next,
-.aione-theme .owl-nav .owl-prev:hover,
-.aione-theme .owl-nav .owl-next:hover{
+.slider.aione:hover .owl-nav .owl-prev,
+.slider.aione:hover .owl-nav .owl-next,
+.slider.aione .owl-nav .owl-prev:hover,
+.slider.aione .owl-nav .owl-next:hover{
     color: rgba(255,255,255,1);
     background: rgba(0,0,0,0.6);
 }
-.aione-theme .owl-nav .owl-prev{
+.slider.aione .owl-nav .owl-prev{
     left:0;
 }
-.aione-theme .owl-nav .owl-next{
+.slider.aione .owl-nav .owl-next{
     right:0;
 }
 
-.owl-carousel-item-imgoverlay {
-    opacity: 1;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.slider.aione .slider-item .slider-caption{
+    opacity:0;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:2;
+    padding: 10%;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #01b7f2;
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
 }
-.owl-carousel .item:hover .owl-carousel-item-imgoverlay {
-    opacity: 1;
-    background-color: transparent;
+.slider.aione .slider-item:hover .slider-caption{
+    opacity:1;
+}
+.slider.aione .slider-item:hover .slider-caption{
+    /*
+    .background-color: #0090bf;
+    */
+}
+
+.slider.aione .slider-item .slider-caption .caption-title{ 
+    color: #ffffff;
+    margin-top:0;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+.slider.aione .slider-item .slider-caption .caption-description{ 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.slider.aione .slider-item .slider-caption .aione-button{ 
+    color: #ffffff;
+    border:2px solid #FFFFFF;
+    background: transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 	
 
@@ -280,8 +338,6 @@ Owl Theme OXO
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-
-
 }
 
 .slider.oxo .owl-nav .owl-prev,
