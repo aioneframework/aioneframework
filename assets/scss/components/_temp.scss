@@ -226,7 +226,6 @@ TO BE CHANGED
 }
 
 .slider.aione .slider-item .slider-caption{
-    opacity:0;
     position:absolute;
     top:0;
     right:0;
@@ -237,20 +236,13 @@ TO BE CHANGED
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
-    background-color: #01b7f2;
     -webkit-transition: all 280ms ease-in-out;
     -moz-transition: all 280ms ease-in-out;
     transition: all 280ms ease-in-out;
 }
 .slider.aione .slider-item:hover .slider-caption{
-    opacity:1;
-}
-.slider.aione .slider-item:hover .slider-caption{
-    /*
-    .background-color: #0090bf;
-    */
-}
 
+}
 .slider.aione .slider-item .slider-caption .caption-title{ 
     color: #ffffff;
     margin-top:0;

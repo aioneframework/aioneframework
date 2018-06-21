@@ -38587,19 +38587,400 @@ input[type=file]:hover {
 .aione-progress-bar.active .aione-progress-bar-content {
   display: block
 }
-.aione-social {
+.aione-social-icons {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
+  text-align: center
 }
-.aione-social > li {
+.aione-social-icons > * {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  line-height: 40px;
+  font-weight: 400
+}
+.aione-social-icons > * > a {
+  display: block
+}
+.aione-social-icons > * > a .icon {
   display: inline-block
 }
-.aione-social > li > a {
+.aione-social-icons > * > a .text {
+  display: inline-block
+}
+.aione-social-icons.vertical > * {
   display: block
 }
-.aione-social.vertical > li {
-  display: block
+.aione-social-icons.small > * {
+  font-size: 16px;
+  width: 34px;
+  line-height: 30px
+}
+.aione-social-icons.large > * {
+  font-size: 26px;
+  width: 54px;
+  line-height: 50px
+}
+.aione-social-icons.circle > * {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%
+}
+.aione-social-icons.rounded > * {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px
+}
+.aione-social-icons.light > * {
+  color: #fff;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #fff
+}
+.aione-social-icons.light-outline > * {
+  color: #fff;
+  border: 2px solid #fff;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #fff
+}
+.aione-social-icons.dark > * {
+  color: #333;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #333
+}
+.aione-social-icons.dark-outline > * {
+  border: 2px solid #333
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #333
+}
+.facebook {
+  background: rgba(64,96,165,.8)
+}
+.facebook:before {
+  font-family: FontAwesome;
+  content: "\f09a"
+}
+.facebook:hover {
+  background: #4060a5
+}
+.twitter {
+  background: rgba(0,171,227,.8)
+}
+.twitter:before {
+  font-family: Ionicons;
+  content: "\f2b0"
+}
+.twitter:hover {
+  background: #00abe3
+}
+.googleplus {
+  background: rgba(230,69,34,.8)
+}
+.googleplus:before {
+  font-family: Ionicons;
+  content: "\f23b"
+}
+.googleplus:hover {
+  background: #e64522
+}
+.linkedin {
+  background: rgba(0,148,188,.8)
+}
+.linkedin:before {
+  font-family: FontAwesome;
+  content: "\f0e1"
+}
+.linkedin:hover {
+  background: #0094bc
+}
+.pinterest {
+  background: rgba(203,32,39,.8)
+}
+.pinterest:before {
+  font-family: Ionicons;
+  content: "\f244"
+}
+.pinterest:hover {
+  background: #cb2027
+}
+.tumblr {
+  background: rgba(58,88,118,.8)
+}
+.tumblr:before {
+  font-family: Ionicons;
+  content: "\f24d"
+}
+.tumblr:hover {
+  background: #3a5876
+}
+.rss {
+  background: rgba(232,136,69,.8)
+}
+.rss:before {
+  font-family: Ionicons;
+  content: "\f248"
+}
+.rss:hover {
+  background: #e88845
+}
+h4 {
+  text-align: center
+}
+.whatsapp {
+  background: #34af23
+}
+.whatsapp:before {
+  font-family: Ionicons;
+  content: "\f2c5"
+}
+.whatsapp:hover {
+  background: #27851a
+}
+.reddit {
+  background: #ff4500
+}
+.reddit:before {
+  font-family: Ionicons;
+  content: "\f247"
+}
+.reddit:hover {
+  background: #ff4500
+}
+.buffer {
+  background: #323b43
+}
+.buffer:before {
+  font-family: Ionicons;
+  content: "\f22d"
+}
+.buffer:hover {
+  background: #1c2126
+}
+.youtube {
+  background: #b00
+}
+.youtube:before {
+  font-family: FontAwesome;
+  content: "\f167"
+}
+.youtube:hover {
+  background: #b00
+}
+.flickr {
+  background: #ff0084
+}
+.flickr:before {
+  font-family: FontAwesome;
+  content: "\f16e"
+}
+.flickr:hover {
+  background: #ff0084
+}
+.instagram {
+  background: #bc2a8d
+}
+.instagram:before {
+  font-family: FontAwesome;
+  content: "\f16d"
+}
+.instagram:hover {
+  background: #bc2a8d
+}
+.yahoo {
+  background: #7b0099
+}
+.yahoo:before {
+  font-family: FontAwesome;
+  content: "\f19e"
+}
+.yahoo:hover {
+  background: #7b0099
+}
+.vimeo {
+  background: #1ab7ea
+}
+.vimeo:before {
+  font-family: FontAwesome;
+  content: "\f27d"
+}
+.vimeo:hover {
+  background: #1ab7ea
+}
+.stumbleupon {
+  background: #eb4823
+}
+.stumbleupon:before {
+  font-family: FontAwesome;
+  content: "\f1a4"
+}
+.stumbleupon:hover {
+  background: #eb4823
+}
+.quora {
+  background: #a82400
+}
+.quora:before {
+  font-family: FontAwesome;
+  content: "\f2c4"
+}
+.quora:hover {
+  background: #a82400
+}
+.foursquare {
+  background: #0072b1
+}
+.foursquare:before {
+  font-family: FontAwesome;
+  content: "\f180"
+}
+.foursquare:hover {
+  background: #0072b1
+}
+.forrst {
+  background: #5b9a68
+}
+.forrst:before {
+  font-family: Ionicons;
+  content: "\f22d"
+}
+.forrst:hover {
+  background: #5b9a68
+}
+.vk {
+  background: #45668e
+}
+.vk:before {
+  font-family: FontAwesome;
+  content: "\f189"
+}
+.vk:hover {
+  background: #45668e
+}
+.blogger {
+  background: #fb8f3d
+}
+.blogger:before {
+  font-family: FontAwesome;
+  content: "\f37c"
+}
+.blogger:hover {
+  background: #fb8f3d
+}
+.wordpress {
+  background: #21759b
+}
+.wordpress:before {
+  font-family: FontAwesome;
+  content: "\f19a"
+}
+.wordpress:hover {
+  background: #21759b
+}
+.soundcloud {
+  background: #ff3a00
+}
+.soundcloud:before {
+  font-family: FontAwesome;
+  content: "\f1be"
+}
+.soundcloud:hover {
+  background: #ff3a00
+}
+.dribbble {
+  background: #ea4c89
+}
+.dribbble:before {
+  font-family: FontAwesome;
+  content: "\f17d"
+}
+.dribbble:hover {
+  background: #ea4c89
+}
+.new-instagram {
+  background: #e95950
+}
+.new-instagram:before {
+  font-family: FontAwesome;
+  content: "\f16d"
+}
+.new-instagram:hover {
+  background: #e95950
+}
+.behance {
+  background: #1769ff
+}
+.behance:before {
+  font-family: FontAwesome;
+  content: "\f1b4"
+}
+.behance:hover {
+  background: #1769ff
+}
+.spotify {
+  background: #00e461
+}
+.spotify:before {
+  font-family: FontAwesome;
+  content: "\f1bc"
+}
+.spotify:hover {
+  background: #00e461
+}
+.vine {
+  background: #00bf8f
+}
+.vine:before {
+  font-family: FontAwesome;
+  content: "\f1ca"
+}
+.vine:hover {
+  background: #00bf8f
+}
+.github {
+  background: #000
+}
+.github:before {
+  font-family: FontAwesome;
+  content: "\f09b"
+}
+.github:hover {
+  background: #000
+}
+.dropbox {
+  background: #007ee5
+}
+.dropbox:before {
+  font-family: FontAwesome;
+  content: "\f16b"
+}
+.dropbox:hover {
+  background: #007ee5
+}
+.snapchat {
+  background: #fffc00
+}
+.snapchat:before {
+  font-family: FontAwesome;
+  content: "\f2ac"
+}
+.snapchat:hover {
+  background: #fffc00
 }
 .gallery:after {
   display: table;
@@ -39737,7 +40118,6 @@ input[type=file]:hover {
   right: 0
 }
 .slider.aione .slider-item .slider-caption {
-  opacity: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -39748,13 +40128,9 @@ input[type=file]:hover {
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
-  background-color: #01b7f2;
   -webkit-transition: all 280ms ease-in-out;
   -moz-transition: all 280ms ease-in-out;
   transition: all 280ms ease-in-out
-}
-.slider.aione .slider-item:hover .slider-caption {
-  opacity: 1
 }
 .slider.aione .slider-item .slider-caption .caption-title {
   color: #fff;
