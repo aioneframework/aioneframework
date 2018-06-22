@@ -710,6 +710,17 @@ $(document).ready(function() {
 /*****************************************************
 /*  Aione Slider
 /*****************************************************/
+function reset_sliders(){
+    var aione_slider_ids = new Array();
+    $(".slider").each(function() {
+        aione_slider_ids.push(aione_slider_id);
+    });
+    $.each(aione_slider_ids, function( index, aione_slider ) {
+        $("#"+aione_slider).trigger('destroy.owl.carousel');
+    });
+    init_sliders();
+}
+
 function init_sliders(){
     var aione_slider_ids = new Array();
     $(".slider").each(function() {
