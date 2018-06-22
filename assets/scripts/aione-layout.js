@@ -1,5 +1,9 @@
+$(window).resize(function(){
+	$('.equal').equal();
+});
 $(document).ready(function() {
-
+	init_sliders();
+	$('.equal').equal();
 	
 
 
