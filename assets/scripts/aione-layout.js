@@ -2,8 +2,17 @@ $(window).resize(function(){
 	$('.equal').equal();
 });
 $(document).ready(function() {
+
+
+	/** Initialize Sliders ***************************************************/
 	init_sliders();
+
+	/** Equalize Columns ***************************************************/
 	$('.equal').equal();
+
+	/** Detect Browser ***************************************************/
+	$('body').addClass("ua-"+$.browser.name);
+	$('body').addClass("ua-version-"+$.browser.versionNumber);
 	
 
 

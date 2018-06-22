@@ -42,6 +42,7 @@ AIONE BUTTONS
 .aione-button.fullwidth{
     width: 100%;
     display: block;
+    box-sizing:border-box;
 }
 .aione-button.square{
     -moz-border-radius: 0;
