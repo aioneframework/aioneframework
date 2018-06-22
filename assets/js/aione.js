@@ -713,6 +713,7 @@ $(document).ready(function() {
 function reset_sliders(){
     var aione_slider_ids = new Array();
     $(".slider").each(function() {
+        var aione_slider_id = $(this).attr("id");
         aione_slider_ids.push(aione_slider_id);
     });
     $.each(aione_slider_ids, function( index, aione_slider ) {
