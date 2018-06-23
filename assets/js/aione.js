@@ -373,6 +373,9 @@ $(document).ready(function() {
 	/** Detect Browser ***************************************************/
 	$('body').addClass("ua-"+$.browser.name);
 	$('body').addClass("ua-version-"+$.browser.versionNumber);
+	$('body').addClass("ua-platform-"+$.browser.platform);
+	if($.browser.desktop == true){ $('body').addClass("ua-device-desktop");}
+	if($.browser.mobile == true){ $('body').addClass("ua-device-mobile");}
 	
 
 
