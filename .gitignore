@@ -1,3 +1,5 @@
+.htaccess
+.gulpfile.js
 /node_modules
 /bower_components
 /assets/test
@@ -5,7 +7,6 @@
 /assets/scripts
 /assets/scss
 /assets/vendor
-.htaccess
 /bak
 
 # Gulp build
