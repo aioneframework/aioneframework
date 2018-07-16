@@ -1,0 +1,30 @@
+.aione-sort-button{
+    cursor: pointer;
+    position: relative;
+}
+.aione-sort-button.asc:after{
+    content: "";
+    border-top: 5px solid #d2d2d2;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: inline;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+}
+.aione-sort-button.desc:after{
+    content: "";
+    border-bottom: 5px solid #d2d2d2;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: inline;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%; 
+}

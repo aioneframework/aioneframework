@@ -1,0 +1,29 @@
+/*************************************
+AIONE WIDTH
+***************************************/
+$i: 1;
+@while $i <= 100 {
+  .width-#{$i},
+  .s-width-#{$i}{
+    width:  $i + %;
+  }
+  $i: $i + 1;
+}
+@media #{$medium-and-up} {
+  $i: 1;
+  @while $i <= 100 {
+    .m-width-#{$i} {
+      width:  $i + %;
+    }
+    $i: $i + 1;
+  }
+}
+@media #{$large-and-up} {
+   $i: 1;
+   @while $i <= 100 {
+    .l-width-#{$i} {
+      width:  $i + %;
+    }
+    $i: $i + 1;
+  }   
+}

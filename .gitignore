@@ -1,18 +1,18 @@
-.htaccess
-.gulpfile.js
+#.htaccess
+#.gulpfile.js
 /node_modules
 /bower_components
 /assets/test
 /assets/test2
-/assets/scripts
-/assets/scss
-/assets/vendor
-/bak
+#/assets/scripts
+#/assets/scss
+#/assets/vendor
+#/bak
 
 # Gulp build
-/aione-tools
-/tools
-/build
-/test
+#/aione-tools
+#/tools
+#/build
+#/test
 
-npm-debug.log
+#npm-debug.log

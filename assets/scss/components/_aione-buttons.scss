@@ -1,0 +1,128 @@
+/***************************************
+AIONE BUTTONS
+***************************************/
+.aione-button{
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #454545;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    text-align: center;
+    display: inline-block;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+.aione-button.small{
+    font-size:16px;
+    line-height: 20px; 
+    padding: 5px 10px;
+}
+.aione-button.medium{
+    font-size:20px;
+    line-height: 28px;
+    padding: 10px 14px;
+}
+.aione-button.large{
+    font-size:24px;
+    line-height: 30px;
+    padding: 14px 18px;
+}
+.aione-button.wide{
+    padding-left:30px;
+    padding-right:30px;
+}
+.aione-button.fullwidth{
+    width: 100%;
+    display: block;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.aione-button.square{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;            
+}
+.aione-button.rounded{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.aione-button.rounded.small{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.aione-button.rounded.medium{
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+.aione-button.rounded.large{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.aione-button.circle{
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+.outline{
+    background-color: transparent;
+    color: #454545;
+    border: 2px solid #454545;
+}
+.aione-button.light,
+.aione-button.light:hover{
+    color: #333333;
+    background-color: #FFFFFF;
+    border-color:#FFFFFF;
+}
+.aione-button.light.outline,
+.aione-button.light.outline:hover{
+    color: #454545;
+    background-color: #FFFFFF;
+    border-color:#FFFFFF;
+}
+.aione-button.dark,
+.aione-button.dark:hover{
+    color: #FFFFFF;
+    background-color: #454545;
+}
+.aione-button.dark.outline,
+.aione-button.dark.outline:hover{
+    color: #454545;
+    background-color: transparent;
+    border-color:#454545;
+}
+.aione-button.primary{
+    color: #FFFFFF;
+    background-color: #168DC5;
+}
+.aione-button.primary:hover{
+    color: #FFFFFF;
+    background-color: #1570A6;
+}
+.aione-button.primary.outline{
+    background-color: transparent;
+    color: #168DC5;
+    border-color: #168DC5;
+}
+.aione-button.primary.outline:hover{
+    background-color: transparent;
+    color: #1570A6;
+    border-color: #1570A6;
+}
