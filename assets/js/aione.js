@@ -758,11 +758,19 @@ function init_sliders(){
 
         $.each(aione_slider_ids, function( index, aione_slider ) {
             var slider_data = $('#'+aione_slider).data();
+            console.log( slider_data);
             if(slider_data !== undefined){
-                $('#'+aione_slider).owlCarousel(slider_data);
+                //console.log('Slider Data =');
+                //console.log(slider_data);
+            	var aione_slider = $('#'+aione_slider);
+                //console.log('Slider =');
+                //console.log(aione_slider);
+                aione_slider.owlCarousel(slider_data);
             } else {
-                console.log('Dlider Data =' + slider_data);
-                $('#'+aione_slider).owlCarousel({
+                console.log('Slider Data =' + slider_data);
+                var aione_slider = $('#'+aione_slider);
+                console.log('Slider =' + aione_slider);
+                aione_slider.owlCarousel({
                     items:1,
                     loop:true,
                     autoplay:true,
@@ -775,8 +783,24 @@ function init_sliders(){
                     navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
                 });
             }
-            //console.log(slider_data);
-            //$(".aione-slider").owlCarousel(DataJson);
+
+            aione_slider.on('changed.owl.carousel', function(event) {
+
+            	/*
+            	var slider_id = $(this).attr('id');
+
+				var item = event.item.index - 2;     // Position of the current item
+
+            	console.log("event = "+event.item.index);
+            	console.log("Item = "+item);
+
+            	$('#'+slider_id+' .caption-title').removeClass().addClass('caption-title');
+				$('#'+slider_id+' .caption-description').removeClass().addClass('caption-description');
+				
+				$('#'+slider_id+' .owl-item').not('.cloned').eq(item).find('.caption-title').addClass('animated').addClass($('#'+slider_id+' .owl-item').not('.cloned').eq(item).find('.caption-title').attr('data-animation'));
+				$('#'+slider_id+' .owl-item').not('.cloned').eq(item).find('.caption-description').addClass('animated').addClass($('#'+slider_id+' .owl-item').not('.cloned').eq(item).find('.caption-title').attr('data-animation'));
+				*/
+			});
         });
     }catch(e){
 
