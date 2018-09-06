@@ -231,6 +231,16 @@ $(document).ready(function() {
 			}
 		});
 	}*/
+
+	/*****************************************************
+	/*  Mobile nav
+	/*****************************************************/
+
+	$(document).on('click', '.primary-nav .aione-nav-background', function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$('.primary-nav .aione-nav').toggleClass("mobile-nav");
+	});
 	/*****************************************************
 	/*  Breadcrumbs(Page Header) Show Hide Sub Menu
 	/*****************************************************/
