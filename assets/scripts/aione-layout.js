@@ -34,15 +34,21 @@ $(document).ready(function() {
 	try{
 		$(".load-template").each(function() {
 			var template_file = $(this).attr("data-src");
-			if(template_file != undefined){
-				$(this).load(teplate_file);
+			if(template_file !== undefined){
+				$(this).load(template_file, function() {
+					reset_sliders();
+					init_sliders();
+				});
 			} else {
-				var template_file = $(this).attr("id");
-				if(template_file != undefined){
-					$(this).load('template/'+template_file+'.html');
+				template_file = $(this).attr("id");
+				if(template_file !== undefined){
+					$(this).load('template/'+template_file+'.html', function() {
+						reset_sliders();
+						init_sliders();
+					});
 				}
 			}
-	    });
+		});
 	}catch(e){
 
 	}
