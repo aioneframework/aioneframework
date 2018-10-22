@@ -316,8 +316,8 @@ $(document).ready(function() {
 	    $(window).scroll(function() {
 			var scrolltop = $(this).scrollTop();
 
-			console.log('scrolltop = '+scrolltop);
-			console.log('offset = '+offset);
+			//console.log('scrolltop = '+scrolltop);
+			//console.log('offset = '+offset);
 			if (scrolltop >= offset) {
 				sticky.addClass('fixed');
 			} else {
