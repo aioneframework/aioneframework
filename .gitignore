@@ -1,10 +1,8 @@
 #.htaccess
 #.gulpfile.js
 /node_modules
-/node_modules_bak
 /bower_components
-/assets/test
-/assets/test2
+#/assets/test
 #/assets/scripts
 #/assets/scss
 #/assets/vendor
